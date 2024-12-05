@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 18:02:02.476267",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctors_tab",
+  "table_kfbm",
+  "clinical_procedure_fees_tab",
+  "table_pflw"
+ ],
+ "fields": [
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_pflw",
+   "fieldtype": "Table",
+   "options": "Clinical Procedure Name"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_kfbm",
+   "fieldtype": "Table",
+   "options": "Clinical Procedure Fees Details"
+  },
+  {
+   "fieldname": "doctors_tab",
+   "fieldtype": "Tab Break",
+   "label": "Doctors"
+  },
+  {
+   "fieldname": "clinical_procedure_fees_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinical Procedure Fees"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-11 05:18:32.776985",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Clinical Procedure Fees",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

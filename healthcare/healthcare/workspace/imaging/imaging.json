@@ -1,0 +1,127 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"gIV60z391m\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Imaging</span>\",\"col\":12}},{\"id\":\"nrdkgMziXc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Imaging Tool\",\"col\":3}},{\"id\":\"-iwaRdpYMH\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Observation Template Tool\",\"col\":3}},{\"id\":\"enwREYoVFl\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"dlC6wC9RkS\",\"type\":\"card\",\"data\":{\"card_name\":\"Buying\",\"col\":4}},{\"id\":\"vnFAR-QjBn\",\"type\":\"card\",\"data\":{\"card_name\":\"HR\",\"col\":4}}]",
+ "creation": "2024-06-07 18:58:35.590144",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "scan",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Imaging",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Buying",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Material Request",
+   "link_count": 0,
+   "link_to": "Material Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Order",
+   "link_count": 0,
+   "link_to": "Purchase Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Receipt",
+   "link_count": 0,
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "HR",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Leave Application",
+   "link_count": 0,
+   "link_to": "Leave Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Expense Claim",
+   "link_count": 0,
+   "link_to": "Expense Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Travel Request",
+   "link_count": 0,
+   "link_to": "Travel Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-12-03 10:26:50.195551",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Imaging",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Medical",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Imaging user"
+  }
+ ],
+ "sequence_id": 42.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Observation Template Tool",
+   "link_to": "Observation Template Tool",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Imaging Tool",
+   "link_to": "Imaging Tool",
+   "type": "DocType"
+  }
+ ],
+ "title": "Imaging"
+}

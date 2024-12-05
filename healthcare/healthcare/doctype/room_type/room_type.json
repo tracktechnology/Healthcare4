@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-22 11:09:50.450087",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "reservation_type",
+  "period",
+  "periond_count",
+  "rate",
+  "item",
+  "item_group",
+  "allow_fraction"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Period",
+   "options": "Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "periond_count",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Periond Count",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_fraction",
+   "fieldtype": "Check",
+   "label": "Allow Fraction"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type",
+   "options": "Reservation Type",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-29 15:42:10.273522",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Room Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

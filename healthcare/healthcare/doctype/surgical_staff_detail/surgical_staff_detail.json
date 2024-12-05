@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-06 18:30:07.342781",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "healthcare_practitioner",
+  "doctor_percentage",
+  "section_break_luka",
+  "has_medical_staff_fees",
+  "minimum_surgery",
+  "percent_surgery"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Surgeon\nAnesthesia\nAssistant\nNursing"
+  },
+  {
+   "fieldname": "healthcare_practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Healthcare Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "doctor_percentage",
+   "fieldtype": "Float",
+   "label": "Doctor Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_luka",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_medical_staff_fees",
+   "fieldtype": "Check",
+   "label": "Has Medical Staff Fees"
+  },
+  {
+   "fieldname": "minimum_surgery",
+   "fieldtype": "Currency",
+   "label": "Minimum Surgery"
+  },
+  {
+   "fieldname": "percent_surgery",
+   "fieldtype": "Percent",
+   "label": "Percent Surgery"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-09 18:53:49.509858",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Surgical Staff Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

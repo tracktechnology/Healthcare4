@@ -1,0 +1,484 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-07 10:28:26.100043",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "clinics_tab",
+  "patient",
+  "column_break_jljz",
+  "section_break_zzei",
+  "doctor",
+  "column_break_hamh",
+  "medical_department",
+  "laboratory_tab",
+  "laboratory_patient",
+  "column_break_fxjl",
+  "section_break_yiom",
+  "patient_name_laboratory",
+  "patient_age_laboratory",
+  "column_break_uxdb",
+  "gender_laboratory",
+  "mobile_phone_laboratory",
+  "section_break_rrsk",
+  "laboratory",
+  "imaging_tab",
+  "imaging_patient",
+  "column_break_ljjz",
+  "imaging_type",
+  "section_break_oqod",
+  "patient_name_imaging",
+  "patient_age_imaging",
+  "column_break_ookr",
+  "clinical_procedure_gender",
+  "mobile_phone_imaging",
+  "section_break_ozyj",
+  "imaging",
+  "clinical_procedure_tab",
+  "clinical_procedure_patient",
+  "column_break_ahbh",
+  "doctor_procedure",
+  "section_break_ttkf",
+  "clinical_procedure_patient_name",
+  "clinical_procedure_patient_age",
+  "column_break_pgoy",
+  "gender_clinical_procedure",
+  "mobile_phone_clinical_procedure",
+  "section_break_zmdq",
+  "clinical_procedure",
+  "column_break_okma",
+  "medications_tab",
+  "medication_patient",
+  "drug_prescription",
+  "services_tab",
+  "medical_service_patient",
+  "column_break_rdfv",
+  "add_medical_service",
+  "section_break_ofpr",
+  "medical_services",
+  "patient_history_tab",
+  "patient_history",
+  "history_items",
+  "patient_info_tab",
+  "room",
+  "section_break_ilnd",
+  "column_break_stth",
+  "reservation_type",
+  "patient_name",
+  "health_insurance",
+  "medical_insurance_company",
+  "medical_insurance",
+  "section_break_iagg",
+  "patient_age",
+  "column_break_ycmp",
+  "patient_sex",
+  "mobile_phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "clinics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Doctor"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "column_break_jljz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zzei",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_hamh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "laboratory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Laboratory"
+  },
+  {
+   "fieldname": "laboratory_patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Inpatient Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fxjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yiom",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name_laboratory",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_age_laboratory",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uxdb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender_laboratory",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_laboratory",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rrsk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "laboratory",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Laboratory",
+   "options": "Observation Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "imaging_tab",
+   "fieldtype": "Tab Break",
+   "label": "Imaging"
+  },
+  {
+   "fieldname": "imaging_patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Inpatient Record",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ljjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_oqod",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name_imaging",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_age_imaging",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ookr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clinical_procedure_gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_imaging",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ozyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "Imaging",
+   "options": "Observation Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "clinical_procedure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinical Procedure"
+  },
+  {
+   "fieldname": "clinical_procedure_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "column_break_ahbh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ttkf",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clinical_procedure_patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clinical_procedure_patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pgoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender_clinical_procedure",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_clinical_procedure",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zmdq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.clinical_procedure_patient!=null",
+   "fieldname": "clinical_procedure",
+   "fieldtype": "Table",
+   "label": "Clinical Procedure",
+   "options": "Clinical Procedure Quantity"
+  },
+  {
+   "fieldname": "section_break_iagg",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ycmp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_sex",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medications_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Medications"
+  },
+  {
+   "fieldname": "medication_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "drug_prescription",
+   "fieldtype": "Table",
+   "options": "Drug Prescription"
+  },
+  {
+   "fieldname": "patient_history_tab",
+   "fieldtype": "Tab Break",
+   "label": "Patient History"
+  },
+  {
+   "fieldname": "patient_history",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "history_items",
+   "fieldtype": "Table",
+   "options": "Due Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "services_tab",
+   "fieldtype": "Tab Break",
+   "label": "Medical Services"
+  },
+  {
+   "fieldname": "medical_service_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Inpatient Record"
+  },
+  {
+   "fieldname": "column_break_rdfv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ofpr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_services",
+   "fieldtype": "Table",
+   "label": "Medical Services",
+   "options": "Medical Service Tool Detail"
+  },
+  {
+   "fieldname": "add_medical_service",
+   "fieldtype": "Button",
+   "label": "Add Medical Service"
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type",
+   "options": "Reservation Type"
+  },
+  {
+   "fieldname": "imaging_type",
+   "fieldtype": "Link",
+   "label": "Imaging Type",
+   "options": "Imaging Type"
+  },
+  {
+   "fieldname": "patient_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Patient Info",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance",
+   "fieldtype": "Check",
+   "label": " Health Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance==1",
+   "fieldname": "medical_insurance_company",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "fieldname": "section_break_ilnd",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_stth",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_insurance",
+   "fieldtype": "Link",
+   "label": "Medical Insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Table",
+   "label": "Room",
+   "options": "Inpatient Room Details"
+  },
+  {
+   "fieldname": "column_break_okma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor_procedure",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-12-03 10:36:19.462189",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Nursing Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

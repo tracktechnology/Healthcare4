@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-09 10:53:50.465538",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reservations_tab",
+  "reservation_doctor",
+  "from_date",
+  "medical_department",
+  "column_break_dfxp",
+  "reservation_patient",
+  "to_date",
+  "reservation_type",
+  "section_break_maci",
+  "replace_doctor",
+  "replace_btn",
+  "column_break_zdnm",
+  "section_break_qdwx",
+  "reservation_deatils"
+ ],
+ "fields": [
+  {
+   "fieldname": "reservations_tab",
+   "fieldtype": "Tab Break",
+   "label": "Reservations"
+  },
+  {
+   "fieldname": "reservation_doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_dfxp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reservation_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "Clinics",
+   "fieldname": "reservation_type",
+   "fieldtype": "Select",
+   "label": "Reservation Type",
+   "options": "Clinics\nLaboratory\nImaging\nClinical Procedure"
+  },
+  {
+   "fieldname": "section_break_maci",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "replace_doctor",
+   "fieldtype": "Link",
+   "label": "Replace Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "replace_btn",
+   "fieldtype": "Button",
+   "hidden": 1,
+   "label": "Replace Doctor"
+  },
+  {
+   "fieldname": "column_break_zdnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qdwx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reservation_deatils",
+   "fieldtype": "Table",
+   "label": "Reservation Deatils",
+   "options": "Patient Inquiry Details"
+  },
+  {
+   "fetch_from": "reservation_doctor.department",
+   "fieldname": "medical_department",
+   "fieldtype": "Data",
+   "label": "Medical Department"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-01 12:46:40.727379",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Reservation Inquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

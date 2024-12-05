@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 18:00:48.931992",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "doctor_percentage",
+  "hospital_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "doctor_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Doctor Percentage"
+  },
+  {
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Hospital Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-29 18:04:03.720343",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Clinical Procedure Fees Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

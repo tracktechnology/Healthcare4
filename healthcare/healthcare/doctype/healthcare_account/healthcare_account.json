@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-08 16:36:38.324640",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_for",
+  "invoice_type",
+  "reservation_type",
+  "medical_department",
+  "mode_of_payment",
+  "account"
+ ],
+ "fields": [
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type",
+   "options": "Reservation Type"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "invoice_type",
+   "fieldtype": "Select",
+   "label": "Invoice Type",
+   "options": "\nPatient Cash\nPatient Contract\nContract"
+  },
+  {
+   "fieldname": "account_for",
+   "fieldtype": "Select",
+   "label": "Account For",
+   "options": "Income\nPayment\nExpense\nReceivable OR Patient\nPayable"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-08 17:31:46.119133",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "HealthCare Account",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

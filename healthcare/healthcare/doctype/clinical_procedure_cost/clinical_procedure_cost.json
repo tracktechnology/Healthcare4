@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-08 15:13:22.632629",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "clinical_procedure",
+  "rate",
+  "percentage",
+  "ratio",
+  "amount",
+  "sales_invoice",
+  "healthcare_practitioner",
+  "inpatient_record",
+  "patient_encounter"
+ ],
+ "fields": [
+  {
+   "fieldname": "clinical_procedure",
+   "fieldtype": "Data",
+   "label": "Clinical Procedure"
+  },
+  {
+   "fieldname": "ratio",
+   "fieldtype": "Float",
+   "label": "Ratio"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Data",
+   "label": "Sales Invoice"
+  },
+  {
+   "fieldname": "healthcare_practitioner",
+   "fieldtype": "Link",
+   "label": "Healthcare Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "inpatient_record",
+   "fieldtype": "Data",
+   "label": "Inpatient Record"
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Data",
+   "label": "Patient Encounter"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-08 15:23:02.616898",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Clinical Procedure Cost",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

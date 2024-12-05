@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:medical_insurance",
+ "creation": "2024-12-03 11:07:45.486864",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ucnq",
+  "medical_insurance",
+  "is_customer",
+  "medical_insurance_type",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ucnq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medical_insurance",
+   "fieldtype": "Data",
+   "label": "Medical Insurance",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_customer",
+   "fieldtype": "Check",
+   "label": "Is Customer"
+  },
+  {
+   "fieldname": "medical_insurance_type",
+   "fieldtype": "Link",
+   "label": "Medical Insurance Type",
+   "options": "Medical Insurance Type"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Medical Insurance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Discount Medical Card",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-03 11:07:45.486864",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Discount Medical Card",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

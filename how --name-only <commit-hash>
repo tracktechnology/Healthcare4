@@ -1,0 +1,377 @@
+[33mcommit 3b3d4f4ca5130abf6591cc9bd8e9d7ee65eef2ba[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Author: root <tracktechnology@track.com>
+Date:   Fri Sep 27 15:42:49 2024 +0000
+
+    Add Pay Request for zero Invoices :Dirar
+
+[33mcommit 36d4620406814fe93afde8ce5dec584221282832[m
+Author: root <tracktechnology@track.com>
+Date:   Fri Sep 27 13:10:31 2024 +0000
+
+    Fix print items in clinincal procedures: Dirar
+
+[33mcommit da8a0e12cf73e69329dcea1b0e24bf9dd608aec5[m
+Author: root <tracktechnology@track.com>
+Date:   Fri Sep 27 11:48:47 2024 +0000
+
+    Before Edit for zero% print :Dirar
+
+[33mcommit 3654d869a0b41c0a95d4387724c40795da9fd538[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Sep 25 13:19:10 2024 +0000
+
+    set reservation date and doctor percenrage discount
+
+[33mcommit 5d9d82a99f6cb6abcf961acd43ecdbab7aa0f12e[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Sep 19 11:39:38 2024 +0000
+
+    edit doctor entry
+
+[33mcommit e1e25d5b82464dbba73ddffa97b38c86862a2e47[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Sep 9 18:52:34 2024 +0000
+
+    Set doctor percentage in surgery
+
+[33mcommit 149659573d3ed585bb91f8e5d95c40e3539e48fa[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Sep 9 13:45:36 2024 +0000
+
+    Fix bugs :Dirar
+
+[33mcommit 3ddbbc4e04269c8351f1db6c5346f557f36a8707[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Sep 9 09:25:49 2024 +0000
+
+    Before Adding accounting entries
+
+[33mcommit 1233ed4fe6e4697ae2d090385bff1ffa34e67419[m
+Author: root <tracktechnology@track.com>
+Date:   Sat Aug 17 15:51:57 2024 +0000
+
+    before edit clinical procedure report
+
+[33mcommit be6733271391bf9cdba29f641d14202055ccd9f9[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Aug 15 11:59:43 2024 +0000
+
+    Make Add Medical serivce Btn open new childtable
+
+[33mcommit 1ccec120ad516e8e774a14725e37ac278578f5e5[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Aug 15 11:05:53 2024 +0000
+
+    Make observation update external labs table in lab test tool :Dirar
+
+[33mcommit 4f67013e48e9c81da0cbdd2406e417c1f24222b1[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Aug 15 10:41:06 2024 +0000
+
+    Fix bug in reservation : Adel
+
+[33mcommit f67856d43a99324858c124df9e97587fa76eef1c[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Aug 14 18:39:50 2024 +0000
+
+    Fix zero percent create invoice: Dirar
+
+[33mcommit f89311ce72176ae51099de01c14857b47a96e76e[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Aug 14 18:38:40 2024 +0000
+
+    Add Supplier new account
+
+[33mcommit 510d36df849901f32395bf0789a65bcc7b7f94f1[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Aug 14 18:35:21 2024 +0000
+
+    Add medical service code :Dirar
+
+[33mcommit 58aa9da06e8b82dd8317efe26b48c044bb6c63f6[m
+Author: root <tracktechnology@track.com>
+Date:   Tue Aug 13 16:14:16 2024 +0000
+
+    Add Medical Service Docs: Dirar
+
+[33mcommit 2621f3d3e0616b4201d477ba2ac918a596ca7e63[m
+Author: root <tracktechnology@track.com>
+Date:   Tue Aug 13 15:40:59 2024 +0000
+
+    Add Validate repeated to external labs: Dirar
+
+[33mcommit ebcde52810c2b80bf580a4e8168c35e9f0b21a45[m
+Author: root <tracktechnology@track.com>
+Date:   Tue Aug 13 13:44:08 2024 +0000
+
+    Add external labs validations: Dirar
+
+[33mcommit 5861b97631d0c11b2a44c47a0fdf09587c17ce5e[m
+Author: root <tracktechnology@track.com>
+Date:   Tue Aug 13 09:24:18 2024 +0000
+
+    Before adding external labs to request for allow edint in input: Dirar
+
+[33mcommit 44db11644a9320ff39f9ce3bf7889dfef7b3660c[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Aug 12 07:45:35 2024 +0000
+
+    Add External Lab not added to lab test tool : Dirar
+
+[33mcommit b72c4fc91c5a4eac50387d012446c600deaa828c[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Aug 12 06:41:59 2024 +0000
+
+    Set payment date by encouter date : M.Adel
+
+[33mcommit a37fd2e183711676381c2064148f1c2f64ec9960[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Aug 8 16:25:26 2024 +0000
+
+    update reports results
+
+[33mcommit 7d4f1f460794824bfd01e2bd840cbf6d580ef264[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Aug 7 12:34:35 2024 +0000
+
+    set hospital percent in contract invoice
+
+[33mcommit e1a577284a6295a2a2b5e76b87db3cbbc947ffb0[m
+Author: root <tracktechnology@track.com>
+Date:   Sat Aug 3 12:10:48 2024 +0000
+
+    create clinic fees
+
+[33mcommit d45daa13ceb5cc7c1ab2855084624a29ec2067b2[m
+Author: root <tracktechnology@track.com>
+Date:   Thu Aug 1 08:36:55 2024 +0000
+
+    create doctor schedule
+
+[33mcommit 8bf035848f8bd2021ee2271a18f5f15b84959ae8[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Jul 29 13:30:51 2024 +0000
+
+    set editing phase 1
+
+[33mcommit 12fc6f03e30a4e64a87eef0e04a94b5f8958b2ab[m
+Author: root <tracktechnology@track.com>
+Date:   Fri Jun 7 15:52:58 2024 +0000
+
+    Add Surgery Doc
+
+[33mcommit ff56a83c4920ef99bc645b3efd26b5037ae26bdf[m
+Author: root <tracktechnology@track.com>
+Date:   Wed Jun 5 08:57:23 2024 +0000
+
+    set consultation and rediret to home
+
+[33mcommit d59373c2c0b8aced5d1fbb48964dba85e3f54f17[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Jun 3 08:40:21 2024 +0000
+
+    before edit slots
+
+[33mcommit f923ad4195898df362955f95a91d80588961bc2f[m
+Author: root <tracktechnology@track.com>
+Date:   Wed May 22 17:49:16 2024 +0000
+
+    set observation request
+
+[33mcommit 77a501a7c94e67e393ee52c17c13d3adb1302dc4[m
+Author: root <tracktechnology@track.com>
+Date:   Mon May 20 08:57:01 2024 +0000
+
+    After clean code
+
+[33mcommit 1c2c3635e9e86eb80524afef4dfc642652603f3f[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 14 09:09:38 2024 +0000
+
+    Before editing redirect based on sessioj
+
+[33mcommit 64274dcd6b5b21e628cb8e12d839845857c6e337[m
+Author: root <tracktechnology@track.com>
+Date:   Mon May 13 07:29:48 2024 +0000
+
+    Before Edit Receipt Tempelate
+
+[33mcommit 9636161131bc115cc842937daaa8326ad07e77a6[m
+Author: root <tracktechnology@track.com>
+Date:   Sun May 12 14:50:36 2024 +0000
+
+    Edit after demo
+
+[33mcommit 1b75694ee7607c22608fa436a8abbc215117d2e6[m
+Author: root <tracktechnology@track.com>
+Date:   Sun May 12 14:47:41 2024 +0000
+
+    Fix Medical insurance invoice
+
+[33mcommit 3a06a79b276de88727daffb01a0eb9495f049087[m
+Author: root <tracktechnology@track.com>
+Date:   Sun May 12 14:00:48 2024 +0000
+
+    Before Editing medical insurance invoice
+
+[33mcommit cc066036884b6f94cd50e6ad0397c322dc1fcb21[m
+Author: root <tracktechnology@track.com>
+Date:   Sun May 12 13:55:32 2024 +0000
+
+    Add Medical Insurance doc
+
+[33mcommit 50b6e9fd9383b91c12d813a586df09e0ac4def04[m
+Author: root <tracktechnology@track.com>
+Date:   Sat May 11 13:07:18 2024 +0000
+
+    Add Print Receipt to reservation
+
+[33mcommit c00dbf08f5d6f55bfc7fa26764f7473b7d375949[m
+Author: root <tracktechnology@track.com>
+Date:   Sat May 11 09:49:36 2024 +0000
+
+    Before working on print
+
+[33mcommit 08f717a35c4e27aa06d3a9139001e6a6a9ed0db9[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 15:17:24 2024 +0000
+
+    Update UI
+
+[33mcommit 8fcc844fac836ebc18c243c8dd05decedf5afa2b[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 12:31:26 2024 +0000
+
+    Add Cancel action for stock docs
+
+[33mcommit 7c95ea6aa81538721e41e608183b6bc14a0c61d6[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 12:30:52 2024 +0000
+
+    fix bug grand total
+
+[33mcommit 187538c581956b337fd3544dea3ed34c0653c1df[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 10:58:52 2024 +0000
+
+    Edit UI
+
+[33mcommit 65b11b4ed433f4392669fef6ae315919a2bca301[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 10:08:59 2024 +0000
+
+    Fix Stock Entry submit with no balance
+
+[33mcommit d594e87df272081e33e8ade134e99d34cea4a717[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 9 09:05:48 2024 +0000
+
+    Add Update stock fn after submit consumables request
+
+[33mcommit 3c91da8c1e84e8fd90e440683df7393b6df7c0ef[m
+Author: root <tracktechnology@track.com>
+Date:   Wed May 8 14:17:14 2024 +0000
+
+    Edit in healthcare stock docs
+
+[33mcommit feb6c273f0d6123af0217671050b24dc1f52e479[m
+Author: root <tracktechnology@track.com>
+Date:   Wed May 8 10:18:02 2024 +0000
+
+    validate disabled slot
+
+[33mcommit a7924bcc621411a6a021eec0c3387264f97cb48b[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 16:33:34 2024 +0000
+
+    create doctors report
+
+[33mcommit df9c073cac4737dbb7233401dfd8f9173fd147af[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 16:03:52 2024 +0000
+
+    Add Stock Docs
+
+[33mcommit 84e8c67434a5e717b86315bc3105a91adda84c3a[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 13:42:21 2024 +0000
+
+    set replace doctor reservation
+
+[33mcommit 068189eec0aa974f6c40034b390187987087e9be[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 12:15:18 2024 +0000
+
+    cancel payment entry
+
+[33mcommit c5cf95eabc7748c3240979f768e18a8ce98544be[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 11:51:37 2024 +0000
+
+    cancel reservation
+
+[33mcommit 57144586deea119bf480b38dea3d78ff922eddce[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 11:22:31 2024 +0000
+
+    Add stock entry fns in patient encounter
+
+[33mcommit 3655dc6571cffea236b512e1f470bf455bfe3afc[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 10:58:58 2024 +0000
+
+    set patient inquery
+
+[33mcommit 9ffb0c2b79127d35fcaa9c82dcac422f46ec4977[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 09:52:45 2024 +0000
+
+    fix percentage bug
+
+[33mcommit dc4802aa80dad83d3016490344afa3c81991de42[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 09:26:43 2024 +0000
+
+    Add Extra fields in patient encounter and observasion template
+
+[33mcommit 9881bd099e2de49834a9287bc51171bdffc5a56b[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 08:23:36 2024 +0000
+
+    Add patient inquiry
+
+[33mcommit a14ded752dc3edc341b8c493076b5234254f6fe7[m
+Author: root <tracktechnology@track.com>
+Date:   Tue May 7 07:29:33 2024 +0000
+
+    Add patient encounter to sales invoice
+
+[33mcommit a81c57ef4fd15baff40fe198200b13bc346813d6[m
+Author: root <tracktechnology@track.com>
+Date:   Mon May 6 16:12:30 2024 +0000
+
+    Add Stock Utils file
+
+[33mcommit a2fcdfcb918f11fba3f236113c9ca73254444980[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 2 13:46:04 2024 +0000
+
+    fix duplicate items in sales invoice
+
+[33mcommit ae43ad28191be8a374be2cc82c23426350df7342[m
+Author: root <tracktechnology@track.com>
+Date:   Thu May 2 12:02:24 2024 +0000
+
+    edit get_healthcare_services_to_invoice
+
+[33mcommit 2306069ec8273322f3ed0818cf9ecf0ae1af2e47[m
+Author: root <tracktechnology@track.com>
+Date:   Mon Apr 22 11:58:29 2024 +0000
+
+    Create Reservation
+
+[33mcommit 7e8ae5470bcfdeee3b074278a98d96452e7ae39b[m[33m ([m[1;34mgrafted[m[33m, [m[1;31mupstream/develop[m[33m, [m[1;31mupstream/HEAD[m[33m)[m
+Author: Aibel <aibelshajan357@gmail.com>
+Date:   Tue Mar 26 11:53:00 2024 +0530
+
+    fix(Diagnostic Report): remove doc from is_new()

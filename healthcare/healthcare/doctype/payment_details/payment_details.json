@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-29 14:59:12.396592",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_invoice",
+  "paper_receipt"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Sales Invoice",
+   "options": "Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "fieldname": "paper_receipt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Paper Receipt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-29 15:01:33.097317",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Payment Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

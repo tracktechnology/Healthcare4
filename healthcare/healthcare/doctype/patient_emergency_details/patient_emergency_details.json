@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 15:20:23.522085",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "from_date",
+  "select",
+  "reference_doc",
+  "medical_insurance_company"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Select"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "reference_doc",
+   "fieldtype": "Link",
+   "label": "Reference Doc",
+   "options": "Patient Emergency"
+  },
+  {
+   "fieldname": "medical_insurance_company",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-24 23:48:18.311247",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Patient Emergency Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-08 17:02:51.408406",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "column_break_kzow",
+  "posting_time",
+  "section_break_cscp",
+  "from_warehouse",
+  "column_break_eewr",
+  "to_warehouse",
+  "section_break_snce",
+  "items",
+  "section_break_knwo",
+  "column_break_etta",
+  "naming_series",
+  "amended_from",
+  "stock_entry"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "section_break_cscp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Stores - TITD",
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "From Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_eewr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "To Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_snce",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Clinical Procedure Item"
+  },
+  {
+   "fieldname": "section_break_knwo",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MED-STRF-.YYYY.-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Transfer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Transfer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_kzow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Data",
+   "label": "Stock Entry"
+  },
+  {
+   "fieldname": "column_break_etta",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-11 18:54:34.226201",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Stock Transfer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

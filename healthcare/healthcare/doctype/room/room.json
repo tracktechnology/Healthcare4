@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:serial_no",
+ "creation": "2024-04-06 14:12:53.855066",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "serial_no",
+  "capacity",
+  "room_type",
+  "is_busy",
+  "room_details"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_busy",
+   "fieldtype": "Check",
+   "label": "Is busy"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serial No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "room_details",
+   "fieldtype": "Table",
+   "label": "Room Details",
+   "options": "Room Details"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Capacity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Room Type",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-22 16:26:18.985355",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Room",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

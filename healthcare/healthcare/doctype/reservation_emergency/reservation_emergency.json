@@ -1,0 +1,602 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-28 12:29:15.284874",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "clinics_tab",
+  "patient",
+  "column_break_jljz",
+  "health_insurance_doctor",
+  "emergency_fees",
+  "emergency_fees_amount",
+  "section_break_zzei",
+  "doctor",
+  "total",
+  "grand_total",
+  "column_break_hamh",
+  "medical_department",
+  "medical_insurance",
+  "insurance_company_doctor",
+  "percentage_doctor",
+  "company_percentage_doctor",
+  "laboratory_tab",
+  "laboratory_patient",
+  "column_break_fxjl",
+  "health_insurance_lab",
+  "lab_status",
+  "section_break_yiom",
+  "patient_name_laboratory",
+  "patient_age_laboratory",
+  "column_break_uxdb",
+  "gender_laboratory",
+  "mobile_phone_laboratory",
+  "section_break_rrsk",
+  "lab_department",
+  "laboratory",
+  "lab_grand_total",
+  "lab_total",
+  "column_break_vyej",
+  "lab_doctor",
+  "medical_insurance_lab",
+  "insurance_company_lab",
+  "percentage_lab",
+  "company_percentage_lab",
+  "imaging_tab",
+  "imaging_patient",
+  "column_break_ljjz",
+  "health_insurance_imaging",
+  "imaging_status",
+  "section_break_oqod",
+  "patient_name_imaging",
+  "patient_age_imaging",
+  "column_break_ookr",
+  "clinical_procedure_gender",
+  "mobile_phone_imaging",
+  "section_break_ozyj",
+  "imaging_department",
+  "imaging",
+  "imaging_grand_total",
+  "imaging_total",
+  "column_break_zevv",
+  "imaging_doctor",
+  "medical_insurance_imaging",
+  "insurance_company_imaging",
+  "percentage_imaging",
+  "company_percentage_imaging",
+  "clinical_procedure_tab",
+  "clinical_procedure_patient",
+  "column_break_ahbh",
+  "health_insurance_clinical_procedure",
+  "section_break_ttkf",
+  "clinical_procedure_patient_name",
+  "clinical_procedure_patient_age",
+  "column_break_pgoy",
+  "gender_clinical_procedure",
+  "mobile_phone_clinical_procedure",
+  "section_break_zmdq",
+  "clinical_procedure_department",
+  "clinical_procedure",
+  "clinical_procedure_grand_total",
+  "clinical_procedure_total",
+  "column_break_ilnu",
+  "clinical_procedure_doctor",
+  "medical_insurance_clinical_procedure",
+  "insurance_company_clinical_procedure",
+  "percentage_clinical_procedure",
+  "company_percentage_clinical_procedure"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "laboratory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Laboratory"
+  },
+  {
+   "fieldname": "laboratory_patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fxjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_lab",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "fieldname": "section_break_yiom",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name_laboratory",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_age_laboratory",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_uxdb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender_laboratory",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_laboratory",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rrsk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "lab_doctor.department",
+   "fieldname": "lab_department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "laboratory",
+   "fieldtype": "Table MultiSelect",
+   "label": "Laboratory",
+   "options": "Observation Details",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "lab_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lab_total",
+   "fieldtype": "Currency",
+   "label": "Total ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vyej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lab_doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctor",
+   "options": "Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance_lab!=null",
+   "fieldname": "insurance_company_lab",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_lab!=null",
+   "fieldname": "percentage_lab",
+   "fieldtype": "Percent",
+   "label": "percentage",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "imaging_tab",
+   "fieldtype": "Tab Break",
+   "label": "Imaging"
+  },
+  {
+   "fieldname": "imaging_patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ljjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_imaging",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "fieldname": "section_break_oqod",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name_imaging",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_age_imaging",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ookr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clinical_procedure_gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_imaging",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ozyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "imaging_doctor.department",
+   "fieldname": "imaging_department",
+   "fieldtype": "Data",
+   "label": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Table MultiSelect",
+   "label": "Imaging",
+   "options": "Observation Details",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "imaging_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "imaging_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zevv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "imaging_doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance_imaging!=null",
+   "fieldname": "insurance_company_imaging",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_imaging!=null",
+   "fieldname": "percentage_imaging",
+   "fieldtype": "Percent",
+   "label": "Percentage",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "clinical_procedure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinical Procedure"
+  },
+  {
+   "fieldname": "clinical_procedure_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "column_break_ahbh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_clinical_procedure",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "fieldname": "section_break_ttkf",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clinical_procedure_patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clinical_procedure_patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pgoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender_clinical_procedure",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_phone_clinical_procedure",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zmdq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "clinical_procedure_doctor.department",
+   "fieldname": "clinical_procedure_department",
+   "fieldtype": "Data",
+   "label": "Medical Department"
+  },
+  {
+   "depends_on": "eval:doc.clinical_procedure_patient_name!=null",
+   "fieldname": "clinical_procedure",
+   "fieldtype": "Table MultiSelect",
+   "label": "Clinical Procedure",
+   "options": "Clinical Procedure Details"
+  },
+  {
+   "fieldname": "clinical_procedure_grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clinical_procedure_total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ilnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clinical_procedure_doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance_clinical_procedure!=null",
+   "fieldname": "insurance_company_clinical_procedure",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_clinical_procedure!=null",
+   "fieldname": "percentage_clinical_procedure",
+   "fieldtype": "Percent",
+   "label": "Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "column_break_jljz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "clinics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Request Doctor"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "section_break_zzei",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hamh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lab_status",
+   "fieldtype": "Select",
+   "label": "Lab Status",
+   "options": "\nComplete Payment\nOpen Service\nPayment"
+  },
+  {
+   "fieldname": "imaging_status",
+   "fieldtype": "Select",
+   "label": "Imaging Status",
+   "options": "\nComplete Payment\nOpen Service\nPayment"
+  },
+  {
+   "default": "0",
+   "fieldname": "emergency_fees",
+   "fieldtype": "Check",
+   "label": "Emergency Fees",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.health_insurance_lab==1",
+   "fieldname": "medical_insurance_lab",
+   "fieldtype": "Link",
+   "label": "Medical insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance_imaging==1",
+   "fieldname": "medical_insurance_imaging",
+   "fieldtype": "Link",
+   "label": "Medical insurance ",
+   "options": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance_clinical_procedure==1",
+   "fieldname": "medical_insurance_clinical_procedure",
+   "fieldtype": "Link",
+   "label": "Medical insurance ",
+   "options": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_lab!=null",
+   "fieldname": "company_percentage_lab",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_imaging!=null",
+   "fieldname": "company_percentage_imaging",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_clinical_procedure!=null",
+   "fieldname": "company_percentage_clinical_procedure",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "emergency_fees_amount",
+   "fieldtype": "Currency",
+   "label": "Emergency Fees",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_doctor",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance_doctor==1",
+   "fieldname": "medical_insurance",
+   "fieldtype": "Link",
+   "label": "Medical Insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance!=null",
+   "fieldname": "insurance_company_doctor",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_doctor!=null",
+   "fieldname": "company_percentage_doctor",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.insurance_company_doctor!=null",
+   "fieldname": "percentage_doctor",
+   "fieldtype": "Percent",
+   "label": "Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-26 15:24:36.609053",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Reservation Emergency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

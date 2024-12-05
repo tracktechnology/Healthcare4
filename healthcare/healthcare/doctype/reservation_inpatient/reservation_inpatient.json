@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 20:29:07.069760",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "emergency_tab",
+  "emergency_patient",
+  "available_capacity",
+  "column_break_ehsh",
+  "health_insurance",
+  "medical_insurance",
+  "medical_insurance_company",
+  "section_break_hvef",
+  "patient_emergency_details",
+  "inpatient_tab",
+  "inpatient",
+  "reservation_type",
+  "column_break_cfxj",
+  "health_insurance_inpatient",
+  "medical_insurance_inpatient",
+  "medical_insurance_company_inpatient"
+ ],
+ "fields": [
+  {
+   "fieldname": "emergency_tab",
+   "fieldtype": "Tab Break",
+   "label": "Emergency"
+  },
+  {
+   "fieldname": "emergency_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "patient_emergency_details",
+   "fieldtype": "Table",
+   "label": "Patient Emergency Details",
+   "options": "Patient Emergency Details"
+  },
+  {
+   "fieldname": "available_capacity",
+   "fieldtype": "Int",
+   "label": "Available Capacity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ehsh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance==1",
+   "fieldname": "medical_insurance",
+   "fieldtype": "Link",
+   "label": "Medical Insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "fieldname": "section_break_hvef",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance!=null",
+   "fieldname": "medical_insurance_company",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "fieldname": "inpatient_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inpatient"
+  },
+  {
+   "fieldname": "inpatient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "column_break_cfxj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance_inpatient",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "depends_on": "eval:doc.health_insurance_inpatient==1",
+   "fieldname": "medical_insurance_inpatient",
+   "fieldtype": "Link",
+   "label": "Medical Insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance_inpatient!=null",
+   "fieldname": "medical_insurance_company_inpatient",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type",
+   "options": "Reservation Type"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-07 13:34:32.240776",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Reservation Inpatient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

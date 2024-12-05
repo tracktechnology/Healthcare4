@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Card with Circular Image and Label</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+
+    
+     <style>
+        .card {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: #293889;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .card .label {
+            padding: 15px;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @font-face {
+  font-family: 'beIN Normal';
+  src: url('/files/assets/beINNormal.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+       
+    </style>
+</head>
+    
+<body style="margin-top: -30px; overflow-x: hidden;">
+    
+    <div class="row">
+        <div class="head">
+        <div class="col-md-8"><img src="files/assets/heroImage.png" alt="hospital" width="350" height="220" style="margin-left: 290px;"></div>
+        <div class="col-md-4">
+            <img src="files/assets/hospital.png" alt="hospital" width="200" height="200" style="margin-right: 20px;">
+            <div style="color: #293889;">
+                <p style="font-size: 30px; font-family:'beIN Normal';margin-top: -30px; margin-left: 27px;">مستشفى </p>
+                <p style="font-size: 30px; font-family:'beIN Normal';margin-top: -10px; margin-left: -60px;">   الشــفــا &nbsp;   &nbsp;التخصصي</p>
+            </div>     
+      </div>
+    </div>
+      
+    <div class="row col-md-12" style="margin-top: 20px; margin-left: 250px;" >
+        <div class="col-md-4" style="margin-right: -155px;"onclick="set_route('Reservation','clinics_tab')" > <div class="card">
+            <div  class="label">عيادات خارجية </div>
+            <img src="files/assets/clinic.png" alt="Card Image">
+        </div></div>
+
+       <div class="col-md-4" style="margin-right: -155px;" onclick="set_route('Reservation','laboratory_tab')"> <div class="card">
+        <div class="label"> المعامل</div>
+        <img src="files/assets/lab.jpg" alt="Card Image">
+    </div></div>
+       
+    <div class="col-md-4"onclick="set_route('Reservation','imaging_tab')"> <div class="card">
+        <div class="label"> أشعة</div>
+        <img src="files/assets/imaging.png" alt="Card Image">
+    </div></div>
+    </div>
+    <div class="row col-md-12" style="margin-top: 20px; margin-left: 250px;">
+    
+    <div class="col-md-4" style="margin-right: -155px;" onclick="set_route('Reservation Inpatient')"> <div class="card">
+        <div class="label">خدمات الطوارئ</div>
+        <img src="files/assets/amb.png" alt="Card Image">
+    </div></div>
+    
+
+    <div class="col-md-4" style="margin-right: -155px;" onclick="set_route('Patient Inquiry')"> <div class="card">
+        <div class="label"> استعلام مواعيد/أسعار</div>
+        <img src="files/assets/inquiry.png" alt="Card Image">
+    </div></div>
+    
+    <div class="col-md-4" style="margin-right: -155px;" onclick="set_route('Reservation','dental_tab')"> <div class="card">
+        <div class="label"> أسنان</div>
+        <img src="files/assets/dental.jpg" alt="Card Image">
+    </div></div>
+
+</div>
+     
+    <div class="row col-md-12" style="margin-top: 20px; margin-left: 250px;">
+        <div class="col-md-4"  style="margin-right: -155px;"onclick="set_route('Reservation Inquiry')"> <div class="card">
+            <div class="label"> متابعة الحجز</div>
+            <img src="files/assets/follow_up.jpg" alt="Card Image">
+        </div></div>
+       <div class="col-md-4"  style="margin-right: -155px;" onclick="set_list_route('Home Visit')"> <div class="card">
+        <div class="label">زيارة منزلية</div>
+        <img src="files/assets/home_visit.jpg" alt="Card Image">
+    </div></div>
+       <div class="col-md-4" onclick="set_list_route('Surgery')"> <div class="card">
+        <div class="label">عمليات</div>
+        <img src="files/assets/emr.png" alt="Card Image">
+    </div></div>
+    </div>
+   
+
+</body>
+
+<script>
+    window.set_route=function(doctype,tab=null){
+    if (tab){
+        localStorage.setItem("tab", tab);  // Store it in localStorage
+    }
+    var Docname=doctype
+    doctype = doctype.toLowerCase();
+    doctype= doctype.replaceAll(" ", "-");  
+   
+history.pushState(null, '', `/app/${doctype}/${Docname}`);
+    window.location.reload();
+
+
+}
+window.set_list_route=function(doctype){
+    
+    var Docname=doctype
+    doctype = doctype.toLowerCase();
+    doctype= doctype.replaceAll(" ", "-");  
+   
+history.pushState(null, '', `/app/${doctype}`);
+    window.location.reload();
+
+
+}
+
+
+</script>
+</html>
+
+

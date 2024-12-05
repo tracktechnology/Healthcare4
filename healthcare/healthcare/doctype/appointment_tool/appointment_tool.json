@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-09 11:58:22.269048",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "column_break_fsyj",
+  "medical_department",
+  "section_break_rkaw",
+  "appointment_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "appointment_details",
+   "fieldtype": "Table",
+   "label": "Appointment Details",
+   "options": "Appointment Details"
+  },
+  {
+   "fieldname": "column_break_fsyj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rkaw",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-09 12:00:04.899030",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Appointment Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

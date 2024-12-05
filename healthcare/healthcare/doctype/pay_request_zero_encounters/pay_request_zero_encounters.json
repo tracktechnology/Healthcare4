@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 16:47:12.843380",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_encounter",
+  "reservation_type",
+  "insurance",
+  "hosbital_discount_type",
+  "confirm"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient Encounter",
+   "options": "Patient Encounter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insurance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hosbital_discount_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hosbital Discount Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confirm",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Confirm"
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reservation Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-27 17:57:43.394437",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Pay Request Zero Encounters",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

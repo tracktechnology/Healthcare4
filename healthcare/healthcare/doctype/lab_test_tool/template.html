@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+         
+ @media print {
+    
+    .to-print {
+
+        width: 100%; /* Set width to fill the page */
+        height: 100%;
+        transform-origin: top ; /* Set the origin of the scaling */
+        overflow: hidden; /* Hide overflow content */
+        page-break-inside: avoid; /* Avoid page breaks inside the container */
+        /* transform: scale(0.6); */
+    }
+}
+   
+            span{
+                font-size: 18px;
+            }
+            /* #container {
+                width: 1000px;
+                height: 800px !important;
+                background-color: rgb(101, 101, 101);
+                margin: auto;
+                margin-top: 150px !important;
+
+            } */
+            #receiptNO{
+                margin-right:500px ;
+                font-size:large ;
+                font-weight: bold;
+            }
+            #details    {
+                border: 3px solid black;
+                border-radius: 10px;
+                 /* width: 700px; height: 425px;  */
+            }
+            #leftDetails{
+                margin-right: 376px;
+                  margin-top: -205px;
+            }
+            span{
+                line-height: 1.9; /* Set the line height to twice the font size */
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+
+            td, th {   
+                border: 1px solid #000000;
+                text-align: left;
+                padding: 8px;
+                }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+                }
+            /* #total{
+                width: 220px;
+            } */
+            caption{
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            h1{
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body  >
+        <h3>Patient Name: {{patient}} </h3>
+        <h3>Date Reported: {{date_reported}}</h3>
+        <h3>referred_by: {{referred_by}}</h3>
+        <h1>{{test}}</h1>
+        {% for i in items %}
+       
+          <table  border="1" style="border-collapse: collapse;">
+
+            <caption>{{i}} </caption>
+            <thead>
+              <tr>
+                <th scope="col">Test</th>
+                <th scope="col">Result</th>
+                <th scope="col">Normal value</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for j in items[i] %}
+              <tr>
+                <td>{{j.lab_test_name}}</td>
+                <td>{{j.result_value}}</td> 
+                <td>{{j.normal_range}}</td> 
+              </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <br>
+            <br>
+
+            {% endfor %}
+    </body>
+</html>

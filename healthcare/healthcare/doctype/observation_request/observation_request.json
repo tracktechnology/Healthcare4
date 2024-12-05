@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-05-20 15:23:59.906545",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "imaging_type",
+  "observation",
+  "observation_category",
+  "medical_department",
+  "status",
+  "total",
+  "medical_insurance",
+  "observation_date",
+  "column_break_gprf",
+  "patient",
+  "amended_from",
+  "doctor",
+  "reservation_type",
+  "remaining_amount",
+  "patient_encounter",
+  "inpatient_record",
+  "patient_percentage",
+  "company_percentage",
+  "hospital_percentage",
+  "is_emergency",
+  "external_lab",
+  "section_break_chch",
+  "external_labs"
+ ],
+ "fields": [
+  {
+   "fieldname": "observation_category",
+   "fieldtype": "Select",
+   "label": "Observation Category",
+   "options": "\nImaging\nLaboratory",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Unpaid\nPaid\nPartially Paid\nCompleted\nPending\nCancelled"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gprf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Observation Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "observation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Observation",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "label": "Patient Encounter",
+   "options": "Patient Encounter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_percentage",
+   "fieldtype": "Percent",
+   "label": "Patient Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_percentage",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "imaging_type",
+   "fieldtype": "Link",
+   "label": "Imaging Type",
+   "options": "Imaging Type"
+  },
+  {
+   "fieldname": "medical_insurance",
+   "fieldtype": "Data",
+   "label": "Medical Insurance"
+  },
+  {
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "label": "Hospital Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_chch",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "external_labs",
+   "fieldtype": "Table",
+   "label": "External Labs",
+   "options": "External Lab Test Detail",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Reservation Type",
+   "options": "Reservation Type"
+  },
+  {
+   "fieldname": "inpatient_record",
+   "fieldtype": "Link",
+   "label": "Inpatient Record",
+   "options": "Inpatient Record"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_emergency",
+   "fieldtype": "Check",
+   "label": "Is Emergency"
+  },
+  {
+   "fieldname": "external_lab",
+   "fieldtype": "Link",
+   "label": "External Lab",
+   "options": "External Lab"
+  },
+  {
+   "fieldname": "observation_date",
+   "fieldtype": "Date",
+   "label": "Observation Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-03 10:05:34.749326",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Observation Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": []
+}

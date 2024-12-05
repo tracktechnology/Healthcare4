@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-28 10:58:54.587750",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "observation_request",
+  "total",
+  "medical_insurance",
+  "reservation_type",
+  "encounter_id",
+  "column_break_rvob",
+  "confirm_request",
+  "observation",
+  "patient_percentage",
+  "amount_due",
+  "company_percentage",
+  "hospital_percentage",
+  "section_break_mjhi",
+  "observation_details",
+  "section_break_arwz",
+  "requests"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fieldname": "observation_request",
+   "fieldtype": "Link",
+   "label": "Observation Request",
+   "options": "Observation Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rvob",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fieldname": "observation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Observation",
+   "options": "Observation Details"
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fieldname": "confirm_request",
+   "fieldtype": "Button",
+   "label": "Confirm Request"
+  },
+  {
+   "fieldname": "section_break_arwz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requests",
+   "fieldtype": "Table",
+   "label": "Observation Request",
+   "options": "Observation Request Details"
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fetch_from": "observation_request.patient_percentage",
+   "fieldname": "patient_percentage",
+   "fieldtype": "Percent",
+   "label": "Patient Percentage ",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fieldname": "amount_due",
+   "fieldtype": "Currency",
+   "label": "Amount Due",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fetch_from": "observation_request.medical_insurance",
+   "fieldname": "medical_insurance",
+   "fieldtype": "Data",
+   "label": "Medical Insurance"
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fetch_from": "observation_request.company_percentage",
+   "fieldname": "company_percentage",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fetch_from": "observation_request.hospital_percentage",
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "label": "Hospital Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type ",
+   "options": "Reservation Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mjhi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.observation_request!=null",
+   "fieldname": "observation_details",
+   "fieldtype": "Table",
+   "label": "Observation Details",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "encounter_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Encounter ID",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-07 12:17:19.495005",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Imaging Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

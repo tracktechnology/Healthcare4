@@ -1,0 +1,32 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-08-23 17:59:55.980554",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-08-23 17:59:55.980554",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Reservation Monitor",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Patient Encounter",
+ "report_name": "Reservation Monitor",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Physician"
+  },
+  {
+   "role": "Receptionist"
+  },
+  {
+   "role": "Healthcare Administrator"
+  }
+ ]
+}

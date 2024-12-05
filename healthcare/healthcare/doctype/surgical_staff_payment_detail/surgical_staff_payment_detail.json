@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-09 18:29:14.987919",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "payment_type",
+  "payment",
+  "min_payment",
+  "for_each"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Surgeon\nAnesthesia\nAssistant\nNursing"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "description": "Amount for Value & % for Percentage",
+   "fieldname": "payment",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Payment"
+  },
+  {
+   "fieldname": "min_payment",
+   "fieldtype": "Float",
+   "in_standard_filter": 1,
+   "label": "Min Payment"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_each",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "For Each"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-09 19:42:20.022533",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Surgical Staff Payment Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

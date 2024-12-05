@@ -1,0 +1,307 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "creation": "2024-08-14 11:44:33.726714",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service",
+  "column_break_ijmv",
+  "period",
+  "by_period",
+  "column_break_nxwf",
+  "period_count",
+  "allow_fraction",
+  "section_break_vutj",
+  "check_in",
+  "column_break_nkng",
+  "check_out",
+  "column_break_glbo",
+  "end_service",
+  "section_break_ddqn",
+  "service_count",
+  "column_break_pkso",
+  "remove_service",
+  "update",
+  "add_service",
+  "section_break_dgok",
+  "practitioner",
+  "done_by",
+  "column_break_kmhp",
+  "department",
+  "comments",
+  "section_break_ryzd",
+  "service_name",
+  "service_request",
+  "column_break_ky11",
+  "date",
+  "appointment_booked",
+  "procedure_created",
+  "invoiced",
+  "section_break_ggcp",
+  "patient_care_type",
+  "source",
+  "ended",
+  "column_break_ld7o",
+  "intent",
+  "priority"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Medical Service",
+   "options": "Medical Service Template",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "procedure.template",
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Service Name"
+  },
+  {
+   "fetch_from": "procedure.medical_department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Referring Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "service_request",
+   "fieldtype": "Data",
+   "label": "Service Request",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ky11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  },
+  {
+   "default": "0",
+   "fieldname": "appointment_booked",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Appointment Booked",
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "procedure_created",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Procedure Created",
+   "no_copy": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "invoiced",
+   "fieldtype": "Check",
+   "label": "Invoiced",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval: doc.service",
+   "fieldname": "section_break_ddqn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "check_in",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Check In"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "column_break_ijmv",
+   "fieldtype": "Column Break",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "service.period",
+   "fieldname": "period",
+   "fieldtype": "Link",
+   "label": "Period",
+   "options": "Period",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "service.periond_count",
+   "fieldname": "period_count",
+   "fieldtype": "Float",
+   "label": "Period Count",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "service.allow_fraction",
+   "fieldname": "allow_fraction",
+   "fieldtype": "Check",
+   "label": "Allow Fraction",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pkso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "No. of time the service needed based on service period setting",
+   "fieldname": "service_count",
+   "fieldtype": "Float",
+   "label": "Service Count"
+  },
+  {
+   "fieldname": "section_break_ggcp",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "patient_care_type",
+   "fieldtype": "Link",
+   "label": "Patient Care Type",
+   "options": "Patient Care Type"
+  },
+  {
+   "fieldname": "column_break_ld7o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "intent",
+   "fieldtype": "Link",
+   "label": "Intent",
+   "options": "Code Value"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Link",
+   "label": "Priority",
+   "options": "Code Value"
+  },
+  {
+   "fieldname": "remove_service",
+   "fieldtype": "Button",
+   "label": "Remove Service"
+  },
+  {
+   "depends_on": "eval: doc.source",
+   "fieldname": "update",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Update"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: !doc.source",
+   "fieldname": "add_service",
+   "fieldtype": "Button",
+   "label": "Add Service"
+  },
+  {
+   "depends_on": "eval: doc.service",
+   "fieldname": "section_break_dgok",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kmhp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ryzd",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "done_by",
+   "fieldtype": "Link",
+   "label": "Done By",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "default": "0",
+   "fetch_from": "service.by_period",
+   "fieldname": "by_period",
+   "fieldtype": "Check",
+   "label": "By Period",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nxwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.by_period== 1",
+   "fieldname": "end_service",
+   "fieldtype": "Button",
+   "label": "End Service"
+  },
+  {
+   "depends_on": "eval: doc.by_period==1",
+   "fieldname": "section_break_vutj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nkng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_glbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ended",
+   "fieldtype": "Check",
+   "label": "Ended",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-15 17:02:22.920035",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Medical Service Tool Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "restrict_to_domain": "Healthcare",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

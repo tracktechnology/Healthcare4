@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-23 13:01:45.636861",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "clinics_tab",
+  "medical_department",
+  "doctor",
+  "clinic_pricing",
+  "appointment_details",
+  "laboratory_tab",
+  "laboratory",
+  "lab_pricing",
+  "imaging_tab",
+  "imaging",
+  "imaging_price",
+  "clinical_procedure_tab",
+  "clinical_procedure",
+  "clinical_procedure_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "clinics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinics"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fetch_from": "doctor.out_patient_booking_charge",
+   "fieldname": "clinic_pricing",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "laboratory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Laboratory"
+  },
+  {
+   "fieldname": "laboratory",
+   "fieldtype": "Table MultiSelect",
+   "label": "Laboratory",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "lab_pricing",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "imaging_tab",
+   "fieldtype": "Tab Break",
+   "label": "Imaging"
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Table MultiSelect",
+   "label": "Imaging",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "imaging_price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "clinical_procedure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinical Procedure"
+  },
+  {
+   "fieldname": "clinical_procedure",
+   "fieldtype": "Table MultiSelect",
+   "label": "Clinical Procedure",
+   "options": "Clinical Procedure Details"
+  },
+  {
+   "fieldname": "clinical_procedure_price",
+   "fieldtype": "Currency",
+   "label": "price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appointment_details",
+   "fieldtype": "Table",
+   "label": "Appointment Details",
+   "options": "Appointment Details"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-10 13:35:35.900148",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Patient Inquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

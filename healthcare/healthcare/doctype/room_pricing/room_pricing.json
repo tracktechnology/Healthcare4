@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-07 14:24:42.095562",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "beds",
+  "section_break_yujv",
+  "uom",
+  "column_break_ipph",
+  "rateuom",
+  "single_room_section",
+  "uom_single",
+  "column_break_urbn",
+  "rate_single",
+  "double_room_section",
+  "uom_double",
+  "column_break_lfig",
+  "rate_double",
+  "triple_room_section",
+  "uom_triple",
+  "column_break_idrt",
+  "rate_triple"
+ ],
+ "fields": [
+  {
+   "default": "Day",
+   "depends_on": "eval:doc.beds == 1",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_ipph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.beds == 1",
+   "fieldname": "rateuom",
+   "fieldtype": "Int",
+   "label": "Rate/UOM"
+  },
+  {
+   "depends_on": "eval:doc.beds == 0",
+   "fieldname": "single_room_section",
+   "fieldtype": "Section Break",
+   "label": "Single Room"
+  },
+  {
+   "default": "Day",
+   "fieldname": "uom_single",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_urbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_single",
+   "fieldtype": "Int",
+   "label": "Rate/UOM"
+  },
+  {
+   "depends_on": "eval:doc.beds == 0",
+   "fieldname": "double_room_section",
+   "fieldtype": "Section Break",
+   "label": "Double Room"
+  },
+  {
+   "default": "Day",
+   "fieldname": "uom_double",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_lfig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_double",
+   "fieldtype": "Int",
+   "label": "Rate/UOM"
+  },
+  {
+   "depends_on": "eval:doc.beds == 0",
+   "fieldname": "triple_room_section",
+   "fieldtype": "Section Break",
+   "label": "Triple Room"
+  },
+  {
+   "default": "Day",
+   "fieldname": "uom_triple",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_idrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_triple",
+   "fieldtype": "Int",
+   "label": "Rate/UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "beds",
+   "fieldtype": "Check",
+   "label": "Beds"
+  },
+  {
+   "fieldname": "section_break_yujv",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-07 14:58:34.880680",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Room Pricing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

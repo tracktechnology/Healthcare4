@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:external_lab",
+ "creation": "2024-08-12 09:54:05.060606",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "external_lab",
+  "section_break_lqdd",
+  "labs_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "external_lab",
+   "fieldtype": "Link",
+   "label": "External Lab",
+   "options": "External Lab",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_lqdd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "labs_price",
+   "fieldtype": "Table",
+   "label": "Labs Price",
+   "options": "External Lab Pricing Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-12 09:58:28.045369",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "External Lab Pricing",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

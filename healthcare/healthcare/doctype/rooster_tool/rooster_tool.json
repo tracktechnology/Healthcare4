@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 21:22:53.624640",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "medical_department",
+  "get_nurses",
+  "column_break_vusj",
+  "from_date",
+  "to_date",
+  "section_break_qmzv",
+  "nurses"
+ ],
+ "fields": [
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "get_nurses",
+   "fieldtype": "Button",
+   "label": "Get Nurses"
+  },
+  {
+   "fieldname": "column_break_vusj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_qmzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "nurses",
+   "fieldtype": "Table",
+   "label": "Nurses",
+   "options": "Rooster Tool Detail"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-29 21:43:34.523273",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Rooster Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

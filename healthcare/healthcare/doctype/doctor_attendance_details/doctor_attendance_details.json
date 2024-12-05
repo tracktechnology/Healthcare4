@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-08 12:05:55.364501",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "healthcare_practitioner",
+  "attend",
+  "non_attend",
+  "from_time",
+  "to_time",
+  "replacement_doctor",
+  "non_attendance_reason",
+  "slot_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "healthcare_practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Healthcare Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "default": "0",
+   "fieldname": "attend",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Attend"
+  },
+  {
+   "fieldname": "non_attendance_reason",
+   "fieldtype": "Small Text",
+   "label": "Non Attendance Reason"
+  },
+  {
+   "fieldname": "replacement_doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Replacement Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "default": "0",
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To Time"
+  },
+  {
+   "fieldname": "slot_name",
+   "fieldtype": "Data",
+   "label": "Slot Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "non_attend",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Non Attend"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-08 16:39:26.976917",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Doctor Attendance Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

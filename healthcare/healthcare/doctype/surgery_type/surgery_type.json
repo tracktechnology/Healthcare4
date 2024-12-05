@@ -1,0 +1,282 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:surgery_type",
+ "creation": "2024-06-06 18:14:38.099842",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_break_citu",
+  "surgery_group",
+  "column_break_dpwb",
+  "surgery_type",
+  "section_break_atxn",
+  "surgery_sub_group",
+  "column_break_zjci",
+  "surgery_degree",
+  "section_break_ypgs",
+  "surgeon_payment_type",
+  "column_break_anvz",
+  "surgeon_payment",
+  "column_break_etqk",
+  "min_surgeon",
+  "section_break_iwex",
+  "anesthesia_payment_type",
+  "column_break_uhel",
+  "anesthesia_payment",
+  "column_break_kugn",
+  "min_anesthesia",
+  "section_break_nnwj",
+  "assistant_payment_type",
+  "column_break_vesx",
+  "assistant_payment",
+  "section_break_lnwh",
+  "hospital_payment_type",
+  "column_break_jdwv",
+  "hospital_payment",
+  "section_break_fkxo",
+  "staff_payments",
+  "items_tab",
+  "openning_surgery_room_item",
+  "column_break_sbsc",
+  "openning_surgery_room_fees",
+  "medications_section",
+  "medications",
+  "consumables_section",
+  "consumables",
+  "medical_devices_section",
+  "medical_devices"
+ ],
+ "fields": [
+  {
+   "fieldname": "surgery_type",
+   "fieldtype": "Data",
+   "label": "Surgery Type",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_ypgs",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "Percentage",
+   "fieldname": "surgeon_payment_type",
+   "fieldtype": "Select",
+   "label": "Surgeon Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "fieldname": "column_break_anvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surgeon_payment",
+   "fieldtype": "Float",
+   "label": "Surgeon Payment"
+  },
+  {
+   "fieldname": "section_break_iwex",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "Percentage",
+   "fieldname": "anesthesia_payment_type",
+   "fieldtype": "Select",
+   "label": "Anesthesia Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "fieldname": "column_break_uhel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "anesthesia_payment",
+   "fieldtype": "Float",
+   "label": "Anesthesia Payment"
+  },
+  {
+   "fieldname": "section_break_nnwj",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "Value",
+   "fieldname": "assistant_payment_type",
+   "fieldtype": "Select",
+   "label": "Assistant Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "fieldname": "column_break_vesx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assistant_payment",
+   "fieldtype": "Float",
+   "label": "Assistant Payment"
+  },
+  {
+   "fieldname": "column_break_etqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_surgeon",
+   "fieldtype": "Float",
+   "label": "Min Surgeon Payment"
+  },
+  {
+   "fieldname": "column_break_kugn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "min_anesthesia",
+   "fieldtype": "Float",
+   "label": "Min Anesthesia Payment"
+  },
+  {
+   "fieldname": "column_break_zjci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.surgery_group",
+   "fieldname": "surgery_sub_group",
+   "fieldtype": "Link",
+   "label": "Surgery Sub Group",
+   "options": "Surgery Sub Group"
+  },
+  {
+   "fieldname": "tab_break_citu",
+   "fieldtype": "Tab Break",
+   "label": "Staff"
+  },
+  {
+   "fieldname": "items_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "options": "Surgery Consumables Item"
+  },
+  {
+   "fieldname": "medical_devices",
+   "fieldtype": "Table",
+   "options": "Surgery Consumables Item"
+  },
+  {
+   "fieldname": "medical_devices_section",
+   "fieldtype": "Section Break",
+   "label": "Medical Devices"
+  },
+  {
+   "fieldname": "medications_section",
+   "fieldtype": "Section Break",
+   "label": "Medications"
+  },
+  {
+   "fieldname": "consumables_section",
+   "fieldtype": "Section Break",
+   "label": "Consumables"
+  },
+  {
+   "fieldname": "section_break_atxn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "surgery_degree",
+   "fieldtype": "Select",
+   "label": "Surgery Degree",
+   "options": "\n\u0630\u0627\u062a \u0645\u0647\u0627\u0631\u0629\n\u0643\u0628\u0631\u0649\n\u0645\u062a\u0648\u0633\u0637\u0629\n\u0635\u063a\u0631\u0649"
+  },
+  {
+   "fieldname": "section_break_lnwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hospital_payment_type",
+   "fieldtype": "Select",
+   "label": "Hospital Payment Type",
+   "options": "Value\nPercent"
+  },
+  {
+   "fieldname": "column_break_jdwv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hospital_payment",
+   "fieldtype": "Float",
+   "label": "Hospital Payment"
+  },
+  {
+   "fieldname": "openning_surgery_room_item",
+   "fieldtype": "Link",
+   "label": "Openning Surgery Room Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_sbsc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "openning_surgery_room_fees",
+   "fieldtype": "Float",
+   "label": "Openning Surgery Room Fees"
+  },
+  {
+   "fieldname": "surgery_group",
+   "fieldtype": "Link",
+   "label": "Surgery Group",
+   "options": "Surgery Group",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_dpwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_fkxo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "staff_payments",
+   "fieldtype": "Table",
+   "label": "Staff Payments",
+   "options": "Surgical Staff Payment Detail"
+  },
+  {
+   "fieldname": "medications",
+   "fieldtype": "Table",
+   "label": "Medications",
+   "options": "Drug Prescription"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-10 22:29:41.613179",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Surgery Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

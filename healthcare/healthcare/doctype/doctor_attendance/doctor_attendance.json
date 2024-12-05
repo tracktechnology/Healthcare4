@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Attendance/{date}",
+ "creation": "2024-05-08 12:04:30.586593",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_uivx",
+  "day",
+  "section_break_pqkg",
+  "doctor_attendance_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor_attendance_details",
+   "fieldtype": "Table",
+   "label": " Doctor Attendance Details",
+   "options": "Doctor Attendance Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_uivx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "Sunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday"
+  },
+  {
+   "fieldname": "section_break_pqkg",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-08 14:01:32.573821",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Doctor Attendance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

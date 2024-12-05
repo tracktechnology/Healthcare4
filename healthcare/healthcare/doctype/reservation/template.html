@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+<!-- <link rel="stylesheet" type="text/css" href="http://hms2.trackintltrade.com/receipt_desing/index.css">
+<link rel="stylesheet" type="text/css" href="http://hms2.trackintltrade.com/receipt_desing/index.css" media="print">
+<link rel="stylesheet" href="http://hms2.trackintltrade.com/receipt_desing/index.css" media="all"> -->
+
+<style>
+@media print,screen {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Left and Right column styling */
+.left {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+.right {
+    flex: 1;
+    background-color: #e4e4e4;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+td, th,tr {   
+    border: 1px solid #000000 !important;
+    text-align: center;
+    padding: 8px;
+    }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+  }
+  
+</style>    
+    </head>
+    <body class="page-break">
+        <div class="container">
+            <div class="column left">
+                <!-- Content for the left column -->
+                <h2> نسخة المريض</h2>
+                <br>
+                <span>اسم المريض</span>
+          
+                <span>{{patient_name}}</span>                
+                <br>
+
+                {% if doctor_name!='undefined'  %}
+                <span> الطبيب : </span>
+                <span>{{doctor_name}}</span>                
+                <br>
+                {%- endif -%}
+
+                {% if medical_department!='undefined'  %}
+                <span> التخصص : </span>
+                <span>{{medical_department}}</span>
+                <br>
+                {%- endif -%}
+                
+                <span>  التاريخ : </span>
+                <span>{{date}}</span>
+                <br>
+                <span>الساعة : </span>
+                <span>{{time}}</span>
+                <br>
+                
+                <span> قائمة الانتظار : </span>
+                <span>{{queue_number}}</span>
+                <br>
+                
+                <span>  الأستقبال : </span>
+                <span>{{user_name}}</span>
+                <br>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>الخدمة</th>
+                        <th>السعر</th>
+                        <th>العدد</th>
+                      </tr>
+                     </thead>
+                     <tbody>
+                    {% for i in items %}
+
+                       <tr>
+                         <td>{{i.item_name}}</td>
+                         <td>{{i.item_price}}</td>
+                         <td>{{i.qty}}</td>
+                       </tr>
+                      
+                {% endfor %}
+                       
+                       
+                    </tbody>
+                  </table>
+       
+
+
+                  <br>
+                <span> الإجمالي : </span>
+                <span>{{total}}</span>
+                <br>
+                <!-- {% if patient_percentage != '0.0'  %} -->
+
+                <span>  تحمل المريض : </span> 
+                <span> {{patient_percentage}} %</span>
+                <br>
+                {%- endif -%}
+
+                {% if insurance_company!='undefined'    %}
+                
+                <span>   الجهة : </span> 
+                <span>{{insurance_company}} </span>
+                <br>
+                
+                {%- endif -%}
+<!-- 
+                <span style="font-weight: bold;"> المستحق على المريض : </span>
+                <span style="font-weight: bold;">{{total_patient_amount}}</span>
+                <br> -->
+    
+               
+    
+                <span style="font-weight: bold;">المبلغ المطلوب : </span>
+                <span style="font-weight: bold;">{{paid}}</span>
+                <br>
+    
+                <span style="font-weight: bold;"> رقم الإيصال : </span>
+                <span style="font-weight: bold;">{{invoice_number}}</span>
+                <br>
+                <h5>{{invoice_note}}</h5>
+            </div>
+                
+    
+            <div class="column right">
+                <h2> نسخة الخزنة</h2>
+                <br>
+                <span>اسم المريض</span>
+          
+                <span>{{patient_name}}</span>
+                
+                <br>
+                {% if doctor_name!='undefined'  %}
+
+                <span> الطبيب : </span>
+                <span>{{doctor_name}}</span>
+                <br>
+                {%- endif -%}
+
+                {% if medical_department!='undefined'  %}
+                <span> التخصص : </span>
+                <span>{{medical_department}}</span>
+                <br>
+                {%- endif -%}
+                
+                <span>  التاريخ : </span>
+                <span>{{date}}</span>
+                <br>
+                <span>الساعة : </span>
+                <span>{{time}}</span>
+                <br>
+                
+                <span> قائمة الانتظار : </span>
+                <span>{{queue_number}}</span>
+                <br>
+                
+                <span>  الأستقبال : </span>
+                <span>{{user_name}}</span>
+                <br>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>الخدمة</th>
+                        <th>السعر</th>
+                        <th>العدد</th>
+                      </tr>
+                     </thead>
+                     <tbody>
+                    {% for i in items %}
+
+                       <tr>
+                         <td>{{i.item_name}}</td>
+                         <td>{{i.item_price}}</td>
+                         <td>{{i.qty}}</td>
+                       </tr>
+                      
+                {% endfor %}
+                       
+                       
+                    </tbody>
+                  </table>
+       
+
+
+                  <br>
+                <span> الإجمالي : </span>
+                <span>{{total}}</span>
+                <br>
+                <!-- {% if patient_percentage != '0.0'  %} -->
+
+                <span>  تحمل المريض : </span> 
+                <span> {{patient_percentage}} %</span>
+                <br>
+                {%- endif -%}
+
+                {% if insurance_company!='undefined'  %}
+                
+                <span>   الجهة : </span> 
+                <span>{{insurance_company}} </span>
+                <br>
+                
+                {%- endif -%}
+
+    
+                <!-- <span style="font-weight: bold;"> المستحق على المريض : </span>
+                <span style="font-weight: bold;">{{total_patient_amount}}</span>
+                <br>           
+     -->
+                <span style="font-weight: bold;">المبلغ المطلوب : </span>
+                <span style="font-weight: bold;">{{paid}}</span>
+                <br>
+    
+                <span style="font-weight: bold;"> رقم الإيصال : </span>
+                <span style="font-weight: bold;">{{invoice_number}}</span>
+                <br>
+                <h5>{{invoice_note}}</h5>
+            </div>
+                
+                
+            </div>
+        </div>
+       
+
+    </body>
+    </html>
+    

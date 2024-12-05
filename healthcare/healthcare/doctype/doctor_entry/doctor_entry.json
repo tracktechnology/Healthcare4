@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 19:25:28.201216",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "patient_encounter",
+  "amount",
+  "department",
+  "sales_invoice",
+  "inpatient_record",
+  "grand_total",
+  "posting_date",
+  "paper_receipt",
+  "is_return",
+  "return_against",
+  "has_return",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Doctor ",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Data",
+   "label": "Patient Encounter"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Sales Invoice"
+  },
+  {
+   "fieldname": "inpatient_record",
+   "fieldtype": "Data",
+   "label": "Inpatient Record"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "paper_receipt",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Paper Receipt"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_return",
+   "fieldtype": "Check",
+   "label": "Is Return"
+  },
+  {
+   "fieldname": "return_against",
+   "fieldtype": "Link",
+   "label": "Return Against",
+   "options": "Doctor Entry"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_return",
+   "fieldtype": "Check",
+   "label": "Has Return"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Doctor Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-08 13:10:42.737079",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Doctor Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

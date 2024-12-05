@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-08 15:34:15.185491",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "from_date",
+  "to_date",
+  "inpatient_record"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "inpatient_record",
+   "fieldtype": "Data",
+   "label": "Inpatient Record"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-03 15:27:51.380127",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Room Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

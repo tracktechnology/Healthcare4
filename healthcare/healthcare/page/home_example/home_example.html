@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Card with Circular Image and Label</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        .card {
+            display: flex;
+            align-items: center;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: #293889;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .card .label {
+            padding: 15px;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            color: #fff;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        @font-face {
+  font-family: 'beIN Normal';
+  src: url('/assets/beINNormal.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+       
+    </style>
+</head>
+<body style="margin-top: 30px;">
+    <div class="row">
+        <div class="col-md-8"><img src="assets/heroImage.png" alt="hospital" width="400" height="350" style="margin-left: 252px;"></div>
+        <div class="col-md-4">
+            <img src="assets/logo.png" alt="hospital" width="200" height="200">
+            <div style="color: #293889;">
+                <p style="font-size: 40px; font-family:'beIN Normal';margin-top: -24px; margin-left: 27px;">مستشفى </p>
+                <p style="font-size: 40px; font-family:'beIN Normal';margin-top: -8px; margin-left: -60px;">   سان &nbsp; بيشوى  &nbsp;التخصصي</p>
+            </div>     
+      </div>
+      
+    <div class="row col-md-12" style="margin-top: 20px; margin-left: 250px;">
+        <div class="col-md-4" style="margin-right: -155px;"> <div class="card">
+            <div class="label">عيادات خارجية </div>
+            <img src="assets/clinic.png" alt="Card Image">
+        </div></div>
+       <div class="col-md-4" style="margin-right: -155px;"> <div class="card">
+        <div class="label">خدمات الطوارئ</div>
+        <img src="assets/amb.png" alt="Card Image">
+    </div></div>
+       <div class="col-md-4"> <div class="card">
+        <div class="label"> داخلي</div>
+        <img src="assets/bed.png" alt="Card Image">
+    </div></div>
+    </div>
+    
+    <div class="row col-md-12" style="margin-top: 20px; margin-left: 250px;">
+        <div class="col-md-4"  style="margin-right: -155px;"> <div class="card">
+            <div class="label">عتاية مركزة</div>
+            <img src="assets/icu.png" alt="Card Image">
+        </div></div>
+       <div class="col-md-4"  style="margin-right: -155px;"> <div class="card">
+        <div class="label">حضانات</div>
+        <img src="assets/nur.png" alt="Card Image">
+    </div></div>
+       <div class="col-md-4"> <div class="card">
+        <div class="label">عمليات</div>
+        <img src="assets/emr.png" alt="Card Image">
+    </div></div>
+    </div>
+   
+
+</body>
+</html>
+
+
+

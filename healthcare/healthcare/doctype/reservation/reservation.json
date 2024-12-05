@@ -1,0 +1,521 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-16 14:43:55.441598",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "clinics_tab",
+  "section_break_ktan",
+  "booking_fees",
+  "consulting_fees",
+  "is_consulting",
+  "laboratory_tab",
+  "section_break_rrsk",
+  "laboratory",
+  "column_break_vyej",
+  "lab",
+  "imaging_tab",
+  "section_break_ozyj",
+  "imaging",
+  "imaging_type",
+  "column_break_zevv",
+  "clinical_procedure_tab",
+  "section_break_zmdq",
+  "clinical_procedure",
+  "column_break_ilnu",
+  "dental_tab",
+  "dental_procedure",
+  "is_follow_up",
+  "request_paid_amount",
+  "column_break_fwso",
+  "section_break_hstg",
+  "reservation_invoices",
+  "section_break_malp",
+  "reservation_follow_up_details",
+  "column_break_thjo",
+  "payments",
+  "cancel_reservation_tab",
+  "cancel_patient",
+  "reservations",
+  "delete_invoice_section",
+  "invoices",
+  "pay_requests_tab",
+  "request_patient",
+  "request_invoices",
+  "zero_invoices",
+  "tab_8_tab",
+  "start_section",
+  "patient",
+  "reservation_date",
+  "column_break_zpzb",
+  "doctor",
+  "medical_department",
+  "column_break_hacp",
+  "health_insurance",
+  "medical_insurance",
+  "insurance_company",
+  "percentage",
+  "company_percentage",
+  "cancel_doctor_fees",
+  "column_break_qyeu",
+  "extra_discount",
+  "hospital_percentage",
+  "special_doctor_percentage",
+  "doctor_percentage",
+  "patietn_info_section",
+  "patient_name",
+  "address",
+  "patient_encounter",
+  "column_break_tpgq",
+  "patient_sex",
+  "encounter_id",
+  "column_break_bzqh",
+  "mobile_phone",
+  "patient_age",
+  "fees_section",
+  "column_break_etlm",
+  "total",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "clinics_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinics"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_age",
+   "fieldtype": "Data",
+   "label": "Patient Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bzqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "mobile_phone",
+   "fieldtype": "Data",
+   "label": "Mobile Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Link",
+   "label": "Patient Encounter",
+   "options": "Patient Encounter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tpgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_sex",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "encounter_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Encounter ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ktan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "doctor.department",
+   "fetch_if_empty": 1,
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Department",
+   "options": "Medical Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_fees",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Booking Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "consulting_fees",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Consulting Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hacp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctor",
+   "options": "Healthcare Practitioner",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.health_insurance==1",
+   "fieldname": "medical_insurance",
+   "fieldtype": "Link",
+   "label": "Medical Insurance",
+   "options": "Medical Insurance"
+  },
+  {
+   "default": "0",
+   "fieldname": "extra_discount",
+   "fieldtype": "Check",
+   "label": "Extra Discount"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_consulting",
+   "fieldtype": "Check",
+   "label": "Is Consulting"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancel_doctor_fees",
+   "fieldtype": "Check",
+   "label": "Cancel Doctor Fees"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_etlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "laboratory_tab",
+   "fieldtype": "Tab Break",
+   "label": "Laboratory"
+  },
+  {
+   "fieldname": "section_break_rrsk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "test",
+   "fieldname": "laboratory",
+   "fieldtype": "Table MultiSelect",
+   "label": "Laboratory",
+   "options": "Observation Details",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vyej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "imaging_tab",
+   "fieldtype": "Tab Break",
+   "label": "Imaging"
+  },
+  {
+   "fieldname": "section_break_ozyj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "imaging",
+   "fieldtype": "Table MultiSelect",
+   "label": "Imaging",
+   "options": "Observation Details",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "imaging_type",
+   "fieldtype": "Link",
+   "label": " Imaging Type",
+   "options": "Imaging Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zevv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "clinical_procedure_tab",
+   "fieldtype": "Tab Break",
+   "label": "Clinical Procedure"
+  },
+  {
+   "fieldname": "section_break_zmdq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "clinical_procedure",
+   "fieldtype": "Table MultiSelect",
+   "label": "Clinical Procedure",
+   "options": "Clinical Procedure Details"
+  },
+  {
+   "fieldname": "column_break_ilnu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dental_tab",
+   "fieldtype": "Tab Break",
+   "label": "Dental"
+  },
+  {
+   "fieldname": "dental_procedure",
+   "fieldtype": "Table MultiSelect",
+   "label": "Dental Procedure",
+   "options": "Clinical Procedure Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_follow_up",
+   "fieldtype": "Check",
+   "label": "Is Follow Up"
+  },
+  {
+   "fieldname": "column_break_fwso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hstg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reservation_invoices",
+   "fieldtype": "Table",
+   "label": "Reservation Invoices",
+   "options": "Reservation Invoices"
+  },
+  {
+   "fieldname": "section_break_malp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reservation_follow_up_details",
+   "fieldtype": "Table",
+   "label": "Reservation Follow Up Details",
+   "options": "Reservation Follow Up Details"
+  },
+  {
+   "fieldname": "column_break_thjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.is_follow_up==1",
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Payments Details"
+  },
+  {
+   "fieldname": "cancel_reservation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cancel Reservation"
+  },
+  {
+   "fieldname": "cancel_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "reservations",
+   "fieldtype": "Table",
+   "label": "Reservations",
+   "options": "Reservation Cancel Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "delete_invoice_section",
+   "fieldtype": "Section Break",
+   "label": "Delete Invoice"
+  },
+  {
+   "fieldname": "invoices",
+   "fieldtype": "Table",
+   "label": "Invoices ",
+   "options": "Reservation Cancel Details"
+  },
+  {
+   "fieldname": "pay_requests_tab",
+   "fieldtype": "Tab Break",
+   "label": "Pay Requests"
+  },
+  {
+   "fieldname": "request_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "request_invoices",
+   "fieldtype": "Table",
+   "label": "Request Invoices",
+   "options": "Request Invoices"
+  },
+  {
+   "fieldname": "zero_invoices",
+   "fieldtype": "Table",
+   "label": "Zero Invoices",
+   "options": "Pay Request Zero Encounters"
+  },
+  {
+   "fieldname": "request_paid_amount",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Request Paid Amount"
+  },
+  {
+   "fieldname": "tab_8_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Master Section"
+  },
+  {
+   "fieldname": "start_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patietn_info_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fees_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reservation_date",
+   "fieldtype": "Date",
+   "label": "Reservation Date"
+  },
+  {
+   "fieldname": "column_break_qyeu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zpzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "health_insurance",
+   "fieldtype": "Check",
+   "label": "Health Insurance"
+  },
+  {
+   "depends_on": "eval:doc.medical_insurance!=null",
+   "fieldname": "insurance_company",
+   "fieldtype": "Link",
+   "label": "Medical insurance company",
+   "options": "Medical insurance company"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.insurance_company!=null",
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_percentage",
+   "fieldtype": "Percent",
+   "hidden": 1,
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.extra_discount==1",
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "label": "Hospital Percentage"
+  },
+  {
+   "default": "0",
+   "fieldname": "special_doctor_percentage",
+   "fieldtype": "Check",
+   "label": "Special Doctor Percentage"
+  },
+  {
+   "depends_on": "eval:doc.special_doctor_percentage==1",
+   "fieldname": "doctor_percentage",
+   "fieldtype": "Percent",
+   "label": "Doctor Percentage",
+   "read_only_depends_on": "eval:doc.special_doctor_percentage_clinics==0"
+  },
+  {
+   "fieldname": "lab",
+   "fieldtype": "Heading",
+   "label": "Lab"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-22 09:33:15.810386",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Reservation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

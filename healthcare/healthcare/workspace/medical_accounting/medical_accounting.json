@@ -1,0 +1,248 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"1KlhxOo4YX\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Medical Accounting</span>\",\"col\":12}},{\"id\":\"8OkTIY7ySt\",\"type\":\"card\",\"data\":{\"card_name\":\"Pricing Rules\",\"col\":4}},{\"id\":\"TqSU5FQxEC\",\"type\":\"card\",\"data\":{\"card_name\":\"Accounting\",\"col\":4}},{\"id\":\"Yh-ExVmcds\",\"type\":\"card\",\"data\":{\"card_name\":\"Consultation Setup\",\"col\":4}}]",
+ "creation": "2024-09-09 14:27:34.519570",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 1,
+ "icon": "healthcare",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Medical Accounting",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pricing Rules",
+   "link_count": 7,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Price",
+   "link_count": 0,
+   "link_to": "Item Price",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Medical Staff Fees",
+   "link_count": 0,
+   "link_to": "Medical Staff Fees",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Room Pricing",
+   "link_count": 0,
+   "link_to": "Room Pricing",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Surgery Pricing",
+   "link_count": 0,
+   "link_to": "Surgery Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clinical Procedure Fees",
+   "link_count": 0,
+   "link_to": "Clinical Procedure Fees",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Medical Service Pricing",
+   "link_count": 0,
+   "link_to": "Medical Service Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Observation Pricing",
+   "link_count": 0,
+   "link_to": "Observation Template Tool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consultation Setup",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clinical Procedure Template",
+   "link_count": 0,
+   "link_to": "Clinical Procedure Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Observation Template",
+   "link_count": 0,
+   "link_to": "Observation Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance & Deduction Entity",
+   "link_count": 0,
+   "link_to": "Medical Insurance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance & Desuction Categories",
+   "link_count": 0,
+   "link_to": "Medical insurance company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accounting",
+   "link_count": 8,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Patient & Company Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hospital Discount Invoice",
+   "link_count": 0,
+   "link_to": "Contract Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Doctor Payment",
+   "link_count": 0,
+   "link_to": "Doctor Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Doctor Payment Inquiry",
+   "link_count": 0,
+   "link_to": "Doctor Payment Inquiry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Revenu Medical Guidelines",
+   "link_count": 0,
+   "link_to": "Revenu Medical Guidelines",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Medical Guidelines",
+   "link_count": 0,
+   "link_to": "Payment Medical Guidelines",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Due Invoice Tool",
+   "link_count": 0,
+   "link_to": "Due Invoice Tool",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Surgery Finance",
+   "link_count": 0,
+   "link_to": "Surgery Finance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-09-16 18:07:02.027387",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Medical Accounting",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Accounting",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "Healthcare",
+ "roles": [],
+ "sequence_id": 6.0,
+ "shortcuts": [],
+ "title": "Medical Accounting"
+}

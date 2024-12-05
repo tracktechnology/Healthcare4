@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 15:41:10.407480",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "consulting_days",
+  "home_visit_price",
+  "min_payment_percent",
+  "emergency_fees",
+  "emergency_doctor_fees",
+  "invoice_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "consulting_days",
+   "fieldtype": "Int",
+   "label": "Valid  Days of Consulting"
+  },
+  {
+   "fieldname": "home_visit_price",
+   "fieldtype": "Currency",
+   "label": "Home Visit Price"
+  },
+  {
+   "fieldname": "min_payment_percent",
+   "fieldtype": "Percent",
+   "label": "Min Payment Percent"
+  },
+  {
+   "fieldname": "emergency_fees",
+   "fieldtype": "Currency",
+   "label": "Emergency Fees"
+  },
+  {
+   "fieldname": "emergency_doctor_fees",
+   "fieldtype": "Currency",
+   "label": "Emergency Doctor Fees"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Int",
+   "label": "Invoice Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-12 17:27:37.623039",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Hospital Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

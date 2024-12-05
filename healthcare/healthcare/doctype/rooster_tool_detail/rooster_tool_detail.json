@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-29 21:23:22.990067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nurse",
+  "s",
+  "su",
+  "m",
+  "tu",
+  "w",
+  "th",
+  "f"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "nurse",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nurse",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "columns": 1,
+   "fieldname": "s",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "S",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "su",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Su",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "m",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "M",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tu",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tu",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "w",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "W",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "th",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Th",
+   "options": "\nN\nL"
+  },
+  {
+   "columns": 1,
+   "fieldname": "f",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "F",
+   "options": "\nN\nL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-31 09:20:07.784596",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Rooster Tool Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

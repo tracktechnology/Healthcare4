@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:period",
+ "creation": "2024-08-13 18:44:56.591357",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "period",
+  "in_hours",
+  "in_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period",
+   "unique": 1
+  },
+  {
+   "fieldname": "in_hours",
+   "fieldtype": "Float",
+   "label": "In Hours"
+  },
+  {
+   "fieldname": "in_days",
+   "fieldtype": "Float",
+   "label": "In Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-13 18:47:36.045526",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Period",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

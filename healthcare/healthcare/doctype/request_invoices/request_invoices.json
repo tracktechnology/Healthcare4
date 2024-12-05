@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-23 16:58:56.628142",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_invoice",
+  "invoice_number",
+  "grand_total",
+  "paid_amount",
+  "remaining_amount",
+  "confirm",
+  "patient_encounter"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Number"
+  },
+  {
+   "columns": 1,
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total"
+  },
+  {
+   "columns": 1,
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Paid Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Remaining Amount"
+  },
+  {
+   "fieldname": "confirm",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Confirm"
+  },
+  {
+   "fieldname": "patient_encounter",
+   "fieldtype": "Data",
+   "label": "Patient Encounter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-23 16:58:56.628142",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Request Invoices",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

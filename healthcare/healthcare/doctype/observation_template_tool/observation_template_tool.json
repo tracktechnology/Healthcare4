@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-15 11:28:15.601868",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "add_tab",
+  "observation",
+  "rate",
+  "item_group",
+  "normal_test_templates",
+  "custom_result",
+  "edit_pricing_tab",
+  "edit_observation",
+  "edit_rate",
+  "edit_normal_test_templates",
+  "edit_custom_result",
+  "bulk_edit_tab",
+  "bulk_edit_observation",
+  "bulk_edit_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "normal_test_templates",
+   "fieldtype": "Table",
+   "options": "Normal Test Template"
+  },
+  {
+   "fieldname": "observation",
+   "fieldtype": "Data",
+   "label": "Observation"
+  },
+  {
+   "fieldname": "edit_pricing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Edit Pricing"
+  },
+  {
+   "fieldname": "add_tab",
+   "fieldtype": "Tab Break",
+   "label": "Add "
+  },
+  {
+   "fieldname": "edit_observation",
+   "fieldtype": "Link",
+   "label": "Observation",
+   "options": "Observation Template"
+  },
+  {
+   "fieldname": "edit_rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "edit_normal_test_templates",
+   "fieldtype": "Table",
+   "options": "Normal Test Template"
+  },
+  {
+   "fieldname": "bulk_edit_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bulk Edit"
+  },
+  {
+   "fieldname": "bulk_edit_observation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Observation",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "bulk_edit_rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result"
+  },
+  {
+   "fieldname": "edit_custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-10 18:18:32.935232",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Observation Template Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

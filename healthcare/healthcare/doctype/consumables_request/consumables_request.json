@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-07 16:21:29.459113",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_from",
+  "column_break_zpks",
+  "posting_date",
+  "posting_time",
+  "section_break_cscp",
+  "from_warehouse",
+  "column_break_eewr",
+  "to_warehouse",
+  "section_break_snce",
+  "items",
+  "section_break_knwo",
+  "naming_series",
+  "amended_from",
+  "stock_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_knwo",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Consumables Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "request_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Request From",
+   "options": "\nClinic\nLabs\nImaging",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_snce",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Clinical Procedure Item"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "MED-CREQ-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_eewr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "To Warehouse",
+   "options": "Warehouse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zpks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "section_break_cscp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Stores - TITD",
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "From Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Data",
+   "label": "Stock Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-11 19:00:33.729198",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Consumables Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

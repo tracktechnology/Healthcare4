@@ -1,0 +1,284 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 09:49:54.933220",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "add_tab",
+  "department",
+  "item",
+  "item_group",
+  "price_list",
+  "medical_department",
+  "healthcare_practitioner_type",
+  "normal_test_templates",
+  "custom_result",
+  "consume_stock",
+  "items",
+  "reuse_by_count",
+  "imaging_type",
+  "add_practitioner_tab",
+  "full_name",
+  "practitioner_department",
+  "mobile_phone",
+  "gender",
+  "practitioner_type",
+  "out_patient_booking_charge",
+  "op_consulting_charge",
+  "practitioner_schedules",
+  "edit_pricing_tab",
+  "edit_item",
+  "edit_item_group",
+  "edit_price_list",
+  "edit_normal_test_templates",
+  "edit_custom_result",
+  "edit_practitioner_tab",
+  "practitioner",
+  "practitioner_name",
+  "practitioner_mobile",
+  "edit_practitioner_department",
+  "edit_practitioner_type",
+  "edit_booking_charge",
+  "edit_consulting_charge"
+ ],
+ "fields": [
+  {
+   "fieldname": "add_tab",
+   "fieldtype": "Tab Break",
+   "label": "Add "
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "depends_on": "eval:doc.department==\"Laboratory\"",
+   "fieldname": "normal_test_templates",
+   "fieldtype": "Table",
+   "options": "Normal Test Template"
+  },
+  {
+   "depends_on": "eval:doc.department==\"Laboratory\"",
+   "fieldname": "custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result"
+  },
+  {
+   "fieldname": "edit_pricing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Edit Pricing"
+  },
+  {
+   "depends_on": "eval:doc.edit_item_group==\"Laboratory\"",
+   "fieldname": "edit_normal_test_templates",
+   "fieldtype": "Table",
+   "options": "Normal Test Template"
+  },
+  {
+   "depends_on": "eval:doc.edit_item_group==\"Laboratory\"",
+   "fieldname": "edit_custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Hospital Department"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Data",
+   "label": "Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "consume_stock",
+   "fieldtype": "Check",
+   "label": " Allow Stock Consumption"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.department==\"Clinical Procedure\"",
+   "fieldname": "reuse_by_count",
+   "fieldtype": "Check",
+   "label": "Reuse By Count"
+  },
+  {
+   "depends_on": "eval:doc.department==\"Imaging\"",
+   "fieldname": "imaging_type",
+   "fieldtype": "Link",
+   "label": "Imaging Type",
+   "options": "Imaging Type"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Table",
+   "label": "Price List",
+   "options": "Price List Details"
+  },
+  {
+   "depends_on": "eval:doc.consume_stock==1",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Clinical Procedure Item"
+  },
+  {
+   "fieldname": "healthcare_practitioner_type",
+   "fieldtype": "Link",
+   "label": "Healthcare Practitioner Type",
+   "options": "Healthcare Practitioner Type"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "mobile_phone",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "practitioner_type",
+   "fieldtype": "Link",
+   "label": "Healthcare Practitioner Type",
+   "options": "Healthcare Practitioner Type"
+  },
+  {
+   "fieldname": "out_patient_booking_charge",
+   "fieldtype": "Float",
+   "label": "Out Patient Booking Charge"
+  },
+  {
+   "fieldname": "practitioner_schedules",
+   "fieldtype": "Table",
+   "label": "Practitioner Schedules",
+   "options": "Practitioner Service Unit Schedule"
+  },
+  {
+   "fieldname": "practitioner_department",
+   "fieldtype": "Link",
+   "label": "Medical Department",
+   "options": "Medical Department"
+  },
+  {
+   "fieldname": "add_practitioner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Add Practitioner"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "op_consulting_charge",
+   "fieldtype": "Float",
+   "label": "Out Patient Consulting Charge"
+  },
+  {
+   "fieldname": "edit_item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "edit_price_list",
+   "fieldtype": "Table",
+   "label": "Price List Details",
+   "options": "Price List Details"
+  },
+  {
+   "fetch_from": "edit_item.item_group",
+   "fieldname": "edit_item_group",
+   "fieldtype": "Data",
+   "label": "Item Group"
+  },
+  {
+   "fieldname": "edit_practitioner_tab",
+   "fieldtype": "Tab Break",
+   "label": "Edit Practitioner"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "Practitioner",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fetch_from": "practitioner.practitioner_name",
+   "fieldname": "practitioner_name",
+   "fieldtype": "Data",
+   "label": "Practitioner Name"
+  },
+  {
+   "fetch_from": "practitioner.mobile_phone",
+   "fieldname": "practitioner_mobile",
+   "fieldtype": "Data",
+   "label": "Practitioner Mobile"
+  },
+  {
+   "fetch_from": "practitioner.department",
+   "fieldname": "edit_practitioner_department",
+   "fieldtype": "Link",
+   "label": "Practitioner Department",
+   "options": "Medical Department"
+  },
+  {
+   "fetch_from": "practitioner.healthcare_practitioner_type",
+   "fieldname": "edit_practitioner_type",
+   "fieldtype": "Link",
+   "label": "Healthcare Practitioner Type",
+   "options": "Healthcare Practitioner Type"
+  },
+  {
+   "fetch_from": "practitioner.out_patient_booking_charge",
+   "fieldname": "edit_booking_charge",
+   "fieldtype": "Float",
+   "label": "Out Patient Booking Charge"
+  },
+  {
+   "fetch_from": "practitioner.op_consulting_charge",
+   "fieldname": "edit_consulting_charge",
+   "fieldtype": "Float",
+   "label": "Out Patient Consulting Charge"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-17 10:18:39.138570",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Item Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

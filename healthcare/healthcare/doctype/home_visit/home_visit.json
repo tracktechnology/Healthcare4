@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-08 15:47:48.293080",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "patient",
+  "mobile",
+  "address",
+  "column_break_gqiw",
+  "description",
+  "section_break_pwiz",
+  "items",
+  "total_items",
+  "visit_fees",
+  "total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Home Visit Details"
+  },
+  {
+   "fieldname": "column_break_gqiw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_pwiz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fetch_from": "patient.mobile",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visit_fees",
+   "fieldtype": "Currency",
+   "label": "Visit Fees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_items",
+   "fieldtype": "Currency",
+   "label": "Total Items",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Home visit",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "patient.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-09 16:47:57.850001",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Home visit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-09 19:31:37.035681",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "healthcare_practitioner",
+  "type",
+  "minimum_surgery",
+  "percent_surgery",
+  "clinic_percent",
+  "clinic_amount",
+  "consultation_percent",
+  "consultation_amount",
+  "request_doctor_percent",
+  "request_doctor_amount",
+  "percent_observation",
+  "observation_amount"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "healthcare_practitioner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Healthcare Practitioner",
+   "options": "Healthcare Practitioner",
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "minimum_surgery",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Minimum Surgery"
+  },
+  {
+   "columns": 1,
+   "fieldname": "percent_surgery",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percent Surgery"
+  },
+  {
+   "columns": 1,
+   "fieldname": "percent_observation",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Observation Percent"
+  },
+  {
+   "columns": 1,
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Surgery Type",
+   "options": "\n\u062c\u0631\u0627\u062d\n\u0645\u0633\u0627\u0639\u062f \u0637\u0648\u0627\u0631\u064a\n\u062a\u062e\u062f\u064a\u0631"
+  },
+  {
+   "columns": 1,
+   "fieldname": "clinic_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Clinic Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "observation_amount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Observation Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "request_doctor_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Request Doctor Percent"
+  },
+  {
+   "columns": 1,
+   "fieldname": "request_doctor_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Request Doctor Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "clinic_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Clinic Percent"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consultation_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Consultation Percent"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consultation_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Consultation Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-09 14:46:14.158916",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Medical Staff Fees Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

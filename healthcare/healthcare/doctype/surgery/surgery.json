@@ -1,0 +1,366 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-06 18:38:22.743806",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "main_surgeon",
+  "column_break_ydrt",
+  "surger_date",
+  "surgery_time",
+  "section_break_zehm",
+  "surgery_type",
+  "column_break_izlt",
+  "is_private_surgery",
+  "section_break_nwne",
+  "surgical_staff",
+  "section_break_uold",
+  "amended_from",
+  "column_break_zwzj",
+  "naming_series",
+  "consumables_tab",
+  "column_break_cczt",
+  "medications",
+  "items_cost",
+  "column_break_fwvh",
+  "extra_medication",
+  "section_break_dauo",
+  "consumables",
+  "column_break_hnzq",
+  "extra_consumables",
+  "section_break_epyt",
+  "medical_devices",
+  "column_break_xrll",
+  "extra_medical_devices",
+  "returns_tab",
+  "return_medication",
+  "return_consumables",
+  "return_medical_devices",
+  "payment_tab",
+  "currency",
+  "advanced_payment",
+  "consumables_cost",
+  "column_break_fuhq",
+  "surgery_total_fees",
+  "remaining_payment",
+  "surgery_profit",
+  "section_break_mavb",
+  "surgeon_percentage",
+  "anesthesia_percentage",
+  "assistant_percentage",
+  "column_break_qtdl",
+  "surgeon_payment_type",
+  "anesthesia_payment_type",
+  "assistant_payment_type",
+  "section_break_thwe",
+  "staff_payments"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uold",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Surgery",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "main_surgeon",
+   "fieldtype": "Link",
+   "label": "Main Surgeon",
+   "options": "Healthcare Practitioner"
+  },
+  {
+   "fieldname": "column_break_ydrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surger_date",
+   "fieldtype": "Date",
+   "label": "Surger Date"
+  },
+  {
+   "fieldname": "surgery_time",
+   "fieldtype": "Time",
+   "label": "Surgery Time"
+  },
+  {
+   "fieldname": "section_break_zehm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "surgery_type",
+   "fieldtype": "Link",
+   "label": "Surgery Type",
+   "options": "Surgery Type"
+  },
+  {
+   "fieldname": "is_private_surgery",
+   "fieldtype": "Select",
+   "label": "Is Private Surgery",
+   "options": "\u063a\u064a\u0631 \u0648\u062a\u0627\u0628\u0639 \u0644\u0644\u0637\u0628\u064a\u0628\n\u062a\u0627\u0628\u0639 \u0644\u0644\u0637\u0628\u064a\u0628"
+  },
+  {
+   "fieldname": "column_break_izlt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nwne",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "surgical_staff",
+   "fieldtype": "Table",
+   "label": "Surgical Staff",
+   "options": "Surgical Staff Detail"
+  },
+  {
+   "fieldname": "column_break_zwzj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "SUR-.YYYY.-"
+  },
+  {
+   "fieldname": "consumables_tab",
+   "fieldtype": "Tab Break",
+   "label": "Consumables"
+  },
+  {
+   "fieldname": "payment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "advanced_payment",
+   "fieldtype": "Currency",
+   "label": "Advanced Payment",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_fuhq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "surgery_total_fees",
+   "fieldtype": "Currency",
+   "label": "Surgery Total Fees"
+  },
+  {
+   "fieldname": "remaining_payment",
+   "fieldtype": "Currency",
+   "label": "Remaining Payment",
+   "options": "currency"
+  },
+  {
+   "fieldname": "items_cost",
+   "fieldtype": "Float",
+   "label": "Items Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "consumables_cost",
+   "fieldtype": "Currency",
+   "label": "Consumables Cost",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "surgery_profit",
+   "fieldtype": "Float",
+   "label": "Surgery Profit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mavb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "surgeon_percentage",
+   "fieldtype": "Float",
+   "label": "Surgeon Percentage"
+  },
+  {
+   "fieldname": "column_break_qtdl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "anesthesia_percentage",
+   "fieldtype": "Float",
+   "label": "Anesthesia Percentage"
+  },
+  {
+   "fieldname": "assistant_percentage",
+   "fieldtype": "Float",
+   "label": "Assistant Percentage"
+  },
+  {
+   "fetch_from": "surgery_type.surgeon_payment_type",
+   "fieldname": "surgeon_payment_type",
+   "fieldtype": "Select",
+   "label": "Surgeon Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "fetch_from": "surgery_type.anesthesia_payment_type",
+   "fieldname": "anesthesia_payment_type",
+   "fieldtype": "Select",
+   "label": "Anesthesia Payment Type",
+   "options": "Percentage\nValue"
+  },
+  {
+   "default": "Value",
+   "fieldname": "assistant_payment_type",
+   "fieldtype": "Select",
+   "label": "Assistant Payment Type",
+   "options": "Value\nPercentage"
+  },
+  {
+   "fieldname": "column_break_cczt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumables",
+   "fieldtype": "Table",
+   "label": "Consumables",
+   "options": "Surgery Consumables Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_devices",
+   "fieldtype": "Table",
+   "label": "Medical Devices",
+   "options": "Surgery Consumables Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_thwe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "staff_payments",
+   "fieldtype": "Table",
+   "label": "Staff Payments",
+   "options": "Surgery Staff Payment Detail"
+  },
+  {
+   "fieldname": "medications",
+   "fieldtype": "Table",
+   "label": "Medications",
+   "options": "Drug Prescription",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fwvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extra_medication",
+   "fieldtype": "Table",
+   "label": "Extra Medication",
+   "options": "Drug Prescription"
+  },
+  {
+   "fieldname": "extra_consumables",
+   "fieldtype": "Table",
+   "label": "Extra Consumables",
+   "options": "Surgery Consumables Item"
+  },
+  {
+   "fieldname": "extra_medical_devices",
+   "fieldtype": "Table",
+   "label": "Extra Medical Devices",
+   "options": "Surgery Consumables Item"
+  },
+  {
+   "fieldname": "section_break_dauo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hnzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_epyt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xrll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "returns_tab",
+   "fieldtype": "Tab Break",
+   "label": "Returns"
+  },
+  {
+   "fieldname": "return_medication",
+   "fieldtype": "Table",
+   "label": "Return Medication",
+   "options": "Drug Prescription"
+  },
+  {
+   "fieldname": "return_consumables",
+   "fieldtype": "Table",
+   "label": "Return Consumables",
+   "options": "Surgery Consumables Item"
+  },
+  {
+   "fieldname": "return_medical_devices",
+   "fieldtype": "Table",
+   "label": "Return Medical Devices",
+   "options": "Surgery Consumables Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-10 17:34:47.140385",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Surgery",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

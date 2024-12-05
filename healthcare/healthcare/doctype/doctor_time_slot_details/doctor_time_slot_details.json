@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "creation": "2024-07-29 19:55:16.168549",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor",
+  "from_time",
+  "to_time",
+  "duration",
+  "maximum_appointments",
+  "maximum_consultation",
+  "for_once",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Float",
+   "label": "Duration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "maximum_appointments",
+   "fieldtype": "Int",
+   "label": "Maximum Appointments"
+  },
+  {
+   "fieldname": "maximum_consultation",
+   "fieldtype": "Int",
+   "label": "Maximum Consultation"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_once",
+   "fieldtype": "Check",
+   "label": "For Once"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctor",
+   "options": "Healthcare Practitioner",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-29 20:22:36.190266",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Doctor Time Slot Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "restrict_to_domain": "Healthcare",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

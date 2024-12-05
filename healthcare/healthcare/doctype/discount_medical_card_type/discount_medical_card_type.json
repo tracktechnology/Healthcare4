@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{company_name} - {category}",
+ "creation": "2024-12-03 11:08:00.182098",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "category",
+  "department_percentage",
+  "room_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "Company name",
+   "options": "Discount Medical Card"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Discount Medical Card Category"
+  },
+  {
+   "fieldname": "department_percentage",
+   "fieldtype": "Table",
+   "label": "Department Percentage",
+   "options": "Medical insurance company details"
+  },
+  {
+   "fieldname": "room_percentage",
+   "fieldtype": "Table",
+   "label": "Room Percentage",
+   "options": "Medical Insurance Company Room Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-03 11:10:56.563754",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Discount Medical Card Type",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "category"
+}

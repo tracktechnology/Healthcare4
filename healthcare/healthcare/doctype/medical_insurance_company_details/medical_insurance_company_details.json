@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-28 13:49:34.968525",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department",
+  "medical_department",
+  "reservation_type",
+  "patient_percentage",
+  "hospital_percentage",
+  "company_percentage",
+  "doctor_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "\nClinics\nLaboratory\nImaging\nClinical Procedure\nEmergency\nMedications\nMedical Services"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Hospital Percentage"
+  },
+  {
+   "columns": 1,
+   "fieldname": "company_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Company Percentage"
+  },
+  {
+   "columns": 1,
+   "fieldname": "patient_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Patient Percentage"
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reservation Type",
+   "options": "Reservation Type"
+  },
+  {
+   "columns": 1,
+   "fieldname": "doctor_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Doctor Percentage"
+  },
+  {
+   "fieldname": "medical_department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Medical Department",
+   "options": "Medical Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-12 15:00:54.236131",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Medical insurance company details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

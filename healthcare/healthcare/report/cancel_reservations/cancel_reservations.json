@@ -1,0 +1,47 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-09-30 14:38:06.779356",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-09-30 14:38:06.779356",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Cancel Reservations",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Patient Encounter",
+ "report_name": "Cancel Reservations",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Physician"
+  },
+  {
+   "role": "Receptionist"
+  },
+  {
+   "role": "Healthcare Administrator"
+  },
+  {
+   "role": "Physician"
+  },
+  {
+   "role": "Receptionist"
+  },
+  {
+   "role": "Healthcare Administrator"
+  },
+  {
+   "role": "Treasury User"
+  },
+  {
+   "role": "Laboratory User"
+  }
+ ]
+}

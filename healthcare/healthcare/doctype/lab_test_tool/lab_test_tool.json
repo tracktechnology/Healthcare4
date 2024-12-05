@@ -1,0 +1,420 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-21 14:12:42.956811",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lab_request_tab",
+  "r_patient",
+  "r_observation_request",
+  "total",
+  "medical_insurance",
+  "reservation_type",
+  "encounter_id",
+  "column_break_cwya",
+  "confirm_request",
+  "observation",
+  "add_external_lab",
+  "patient_percentage",
+  "amount_due",
+  "company_percentage",
+  "hospital_percentage",
+  "section_break_bwnj",
+  "observation_details",
+  "section_break_qnlp",
+  "external_labs",
+  "section_break_kjjp",
+  "requests",
+  "input_result_tab",
+  "section_break_rstm",
+  "patient",
+  "mobile",
+  "gender",
+  "column_break_ctin",
+  "edit",
+  "section_break_ykzj",
+  "html_test_status",
+  "section_break_njor",
+  "test_options",
+  "is_external_lab",
+  "column_break_ikso",
+  "observation_request",
+  "column_break_frsm",
+  "lab_test",
+  "section_break_ryxc",
+  "items",
+  "custom_result",
+  "print_result_tab",
+  "print_patient",
+  "p_mobile",
+  "p_gender",
+  "column_break_mtox",
+  "reprint",
+  "section_break_mjxt",
+  "html_test_print",
+  "section_break_xplw",
+  "print_test",
+  "column_break_gcaj",
+  "print_observation_request",
+  "column_break_tjok",
+  "print_lab_test",
+  "section_break_eaqm",
+  "print_items",
+  "print_custom_result"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "html_test_status",
+   "fieldtype": "HTML Editor",
+   "label": "Test Status"
+  },
+  {
+   "fieldname": "test_options",
+   "fieldtype": "Select",
+   "label": "Test",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.lab_test!=null",
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Normal Test Result"
+  },
+  {
+   "fieldname": "lab_test",
+   "fieldtype": "Data",
+   "label": "Lab Test",
+   "read_only": 1
+  },
+  {
+   "fieldname": "observation_request",
+   "fieldtype": "Data",
+   "label": "Observation Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_njor",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ykzj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "patient.mobile",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "input_result_tab",
+   "fieldtype": "Tab Break",
+   "label": "Input Result"
+  },
+  {
+   "fieldname": "print_result_tab",
+   "fieldtype": "Tab Break",
+   "label": "Print Result"
+  },
+  {
+   "fieldname": "print_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "column_break_mtox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xplw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_test_print",
+   "fieldtype": "HTML Editor",
+   "label": "Tests"
+  },
+  {
+   "fieldname": "print_test",
+   "fieldtype": "Data",
+   "label": "Test ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "patient.sex",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mjxt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tjok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "print_lab_test",
+   "fieldtype": "Data",
+   "label": "Lab Test",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_eaqm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "reprint",
+   "fieldtype": "Check",
+   "label": "Reprint"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit",
+   "fieldtype": "Check",
+   "label": "Edit"
+  },
+  {
+   "fieldname": "section_break_rstm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "print_observation_request",
+   "fieldtype": "Data",
+   "label": "Observation Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gcaj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "print_patient.mobile",
+   "fieldname": "p_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "print_patient.sex",
+   "fieldname": "p_gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ctin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ikso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_frsm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ryxc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lab_request_tab",
+   "fieldtype": "Tab Break",
+   "label": "Lab Request"
+  },
+  {
+   "fieldname": "requests",
+   "fieldtype": "Table",
+   "label": "Observation Request",
+   "options": "Observation Request Details"
+  },
+  {
+   "fieldname": "r_patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fieldname": "r_observation_request",
+   "fieldtype": "Link",
+   "label": "Observation Request",
+   "options": "Observation Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_kjjp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_cwya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "confirm_request",
+   "fieldtype": "Button",
+   "label": "Confirm Request"
+  },
+  {
+   "depends_on": "eval:doc.r_patient!=null",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "observation_details",
+   "fieldtype": "Table",
+   "label": "Observation Details",
+   "options": "Observation Details"
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "observation",
+   "fieldtype": "Table MultiSelect",
+   "label": "Observation",
+   "options": "Observation Details"
+  },
+  {
+   "fieldname": "section_break_bwnj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fetch_from": "r_observation_request.patient_percentage",
+   "fieldname": "patient_percentage",
+   "fieldtype": "Percent",
+   "label": "Patient Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "amount_due",
+   "fieldtype": "Currency",
+   "label": "Amount Due",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fetch_from": "r_observation_request.medical_insurance",
+   "fieldname": "medical_insurance",
+   "fieldtype": "Data",
+   "label": "Medical Insurance",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fetch_from": "r_observation_request.company_percentage",
+   "fieldname": "company_percentage",
+   "fieldtype": "Percent",
+   "label": "Company Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fetch_from": "r_observation_request.hospital_percentage",
+   "fieldname": "hospital_percentage",
+   "fieldtype": "Percent",
+   "label": "Hospital Percentage",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "add_external_lab",
+   "fieldtype": "Button",
+   "label": "Add External Lab"
+  },
+  {
+   "fieldname": "section_break_qnlp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.r_observation_request!=null",
+   "fieldname": "external_labs",
+   "fieldtype": "Table",
+   "label": "External Labs",
+   "options": "External Lab Test Detail"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.lab_test",
+   "fieldname": "is_external_lab",
+   "fieldtype": "Check",
+   "label": "Is External Lab",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.lab_test!=null",
+   "fieldname": "custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result"
+  },
+  {
+   "fieldname": "print_custom_result",
+   "fieldtype": "Text Editor",
+   "label": "Custom Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "print_items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Normal Test Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reservation_type",
+   "fieldtype": "Link",
+   "label": "Reservation Type",
+   "options": "Reservation Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "encounter_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Encounter ID",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-07 12:11:08.644925",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Lab Test Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
